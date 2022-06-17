@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #171840;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.active {
+  background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.connect_btn {
+  background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
+  border-radius: 97px;
+}
+.filter_btn {
+  background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
+}
+.trade {
+  background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
+  border-radius: 97px;
+}
+.text_color {
+  color: #9AFFFE;
+}
+.inner_bg {
+  background-color: #23255A;
+}
+#swap_bg {
+  background-color: #171840;
+}
+.active_time {
+  background-color: #2A4790;
+}
+.time_bg {
+  background-color: #171840;
+}
+.trade_title {
+  background: linear-gradient(90deg, #CAE7FF 0%, #FFFFFF 42.22%, #CAE7FF 93.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.hero_card {
+  background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+  backdrop-filter: blur(1110px);
+}
+.get_started {
+  filter: blur(100px);
+}
+.get_started_card {
+  background: rgba(255, 255, 255, 0.095);
+  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.17), inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(74.4293px);
+}
+.blockchain_gradient_left {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(100px);
+}
+.blockchain_gradient_right {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
+}
+.start_bg {
+  background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
+}
+#clip_bg {
+  background-color: #2C2E5B;
+}
+#rate {
+  color: #3E9B96;
+}
+.inp_bg {
+  background-color: #2C2E5B;
+}
+.circles {
+  background-image: url('/public/assets/circle.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:100%;
+}
+.man_image {
+  background-image: url('/public/assets/man.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+.space {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('/public/assets/pilot.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+.create {
+  background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url('/public/assets/shapes.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+.reality_header_title {
+  color: #171840;
+}
+.get_started {
+  border-radius: 97px;
+  background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
+}
+.explore_gradient {
+  background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.ecosys_hero{
+  background-repeat: no-repeat!important; 
+  background-size: 100% !important;
+  background-position: left;
+  background: linear-gradient(rgba(23, 24, 64,0.7), rgba(23, 24, 64,0.7)),url('/public/assets/spiral_bg.svg');
+  background-color: #171840;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 60% 100%, 50% 100%, 0 90%);
+}
+.whitepaper_btn {
+  color: #0C66F1;
+  border-radius: 97px;
+}
+.active_eco {
+  background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.ecosysTitles {
+  color: #2A4790;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
