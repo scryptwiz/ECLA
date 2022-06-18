@@ -4,7 +4,7 @@ import Header from "../static/Header"
 const Landingpage = () => {
   return (
     <>
-    <div className="main_bg w-11/12 mx-auto pt-10">
+    <div className="main_bg w-full px-20 mx-auto pt-10 spiral_bg">
         <Helmet>
           <title>ECLA Wallet</title>
         </Helmet>

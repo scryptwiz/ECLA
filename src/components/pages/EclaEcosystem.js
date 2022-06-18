@@ -16,7 +16,7 @@ const EclaEcosystem = () => {
                 <div className="h-4/6 w-full flex flex-col">
                   <h1 className="text-6xl font-bold text-white  mx-auto text-center">Blockchain Ecosystem <br/> for Real People</h1>
                   <span className="flex gap-10 mt-10 mx-auto">
-                    <button className="text-sm text-white connect_btn ">Roadmap</button>
+                    <button className="text-sm text-white connect_btn px-8 py-2">Roadmap</button>
                     <button className="text-sm px-8 py-2 bg-white whitepaper_btn">Road Whitepaper</button>
                     <img src="/assets/eclaLogo3.png" className="h-32 absolute left-52 bottom-0 ecla_logo_3" alt="Ecla Logo"/>
                     <img src="/assets/eclipse.png" className="h-32 absolute right-20 bottom-1" alt="Eclipse"/>

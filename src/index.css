@@ -55,7 +55,18 @@ code {
   backdrop-filter: blur(1110px);
 }
 .get_started {
-  filter: blur(100px);
+  background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
+  border-radius: 97px;
+}
+.reality_footer_bg {
+  background: radial-gradient(40.97% 40.97% at 89.88% 7.26%, #2F2F2F 0%, #1C1C1C 100%)
+}
+.vr_img {
+  position: relative;
+  top: 20px;
+  right: 25%;
+  opacity: 0.8;
+  z-index: 2;
 }
 .get_started_card {
   background: rgba(255, 255, 255, 0.095);
@@ -89,29 +100,45 @@ code {
   background-size:100%;
 }
 .man_image {
-  background-image: url('/public/assets/man.png');
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),url('/public/assets/man.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
 }
 .space {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('/public/assets/pilot.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
 }
 .create {
   background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url('/public/assets/shapes.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
 }
 .reality_header_title {
   color: #171840;
 }
 .get_started {
-  border-radius: 97px;
+  filter: blur(100px);
+  /* border-radius: 97px;
+  background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%); */
+}
+.blur_bg {
+  position: absolute;
+  filter: blur(10px);
   background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
+}
+.spiral_bg {
+  background-repeat: no-repeat!important;
+  background-size: 120%!important;
+  background: linear-gradient(rgba(23, 24, 64,0.7), rgba(23, 24, 64,0.7)),url('/public/assets/spiral_bg.svg');
+}
+.geometric_bg {
+  background-image: url('/public/assets/realityImages/geometricShape.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .explore_gradient {
   background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
@@ -144,6 +171,7 @@ code {
 }
 ::-webkit-scrollbar {
   width: 7px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 

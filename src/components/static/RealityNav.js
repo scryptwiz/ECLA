@@ -1,7 +1,7 @@
 const RealityNav = () => {
   return (
-    <nav className="flex justify-between">
-        <img src="/assets/realityLogo.png" alt="ECLA LOGO" />
+    <nav className="flex justify-between items-center">
+        <img src="/assets/realityLogo.png" className="h-8 sm:h-fit" alt="ECLA LOGO" />
         <ul className="lg:flex hidden items-center gap-9">
             <li>
                 <p className="text-gray-700 flex items-center text-sm tracking-wide font-medium">
@@ -28,7 +28,7 @@ const RealityNav = () => {
                 </p>
             </li>
         </ul>
-        <button className="lg:hidden block"><img src="/assets/menubar.png" className="h-10" alt="Menubar"/></button>
+        <button className="lg:hidden block"><img src="/assets/darkMenubar.png" className="h-10" alt="Menubar"/></button>
     </nav>
   )
 }

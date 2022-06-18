@@ -6,27 +6,27 @@ const Header = () => {
         <img src="/assets/logo.png" alt="ECLA LOGO" />
         <ul className="lg:flex hidden items-center gap-9">
             <li>
-                <p className="text-white flex items-center text-sm tracking-wide font-medium">
+                <Link to='/swap' className="text-white flex items-center text-sm tracking-wide font-medium">
                     Developer
                     <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
-                </p>
+                </Link>
             </li>
             <li>
-                <p className="text-white flex items-center text-sm tracking-wide font-medium">
+                <Link to='/eclablockchain' className="text-white flex items-center text-sm tracking-wide font-medium">
                     Ecosystem
                     <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
-                </p>
+                </Link>
             </li>
             <li>
-                <Link to='/' className="text-white text-sm tracking-wide font-medium">Developer</Link>
+                <Link to='/eclareality' className="text-white text-sm tracking-wide font-medium">Developer</Link>
             </li>
             <li>
-                <p className="text-white flex items-center text-sm tracking-wide font-medium">
+                <Link to='/eclamarket' className="text-white flex items-center text-sm tracking-wide font-medium">
                     Learn
                     <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
-                </p>
+                </Link>
             </li>
-            <button className="text-white px-8 py-1.5 connect_btn">Connect</button>
+            <Link to='/eclaecosystem' className="text-white px-8 py-1.5 connect_btn">Connect</Link>
         </ul>
         <button className="lg:hidden block"><img src="/assets/menubar.png" className="h-10" alt="Menubar"/></button>
     </nav>
