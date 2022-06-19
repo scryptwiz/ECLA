@@ -123,7 +123,7 @@ const MarketPlace = () => {
                             <small className="text-xs mt-3 text-center">Lectus volutpat <br/> magna vitae in arcu</small>
                         </div>
                     </div>
-                    <div className="w-10/12 mt-5">
+                    <div className="w-10/12 xl:w-10/12 lg:w-full mt-5">
                         <nav className="flex items-center justify-between">
                             <h2 className="text-3xl font-medium">Discover</h2>
                             <ul className="lg:flex hidden items-center gap-9">

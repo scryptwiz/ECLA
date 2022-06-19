@@ -41,12 +41,7 @@ const EclaReality = () => {
         </div>
         <div className="w-full py-10 reality_footer_bg">
             <div className="w-10/12 flex h-full justify-between flex-col mx-auto">
-                {/* <span className="lg:w-4/5 w-full mx-auto">
-                    <div className="flex">
-                        <h1 className="text-8xl tracking-widest font-semibold text-white">ECLA <br/> Reality</h1>
-                        <img src="/assets/vrImg.png" className="vr_img" alt="Reality Design"/>
-                    </div>
-                </span> */}
+                {/* <img src="/assets/Eclareality.png" alt="Ecla Reality"/> */}
                 <span className="my-10">
                     <span className="flex gap-10 text-white underline">
                         <Link to='/' className="active">Explore</Link>

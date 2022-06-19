@@ -27,7 +27,7 @@ const Homepage = () => {
     <>
       <div className="main_bg w-11/12 mx-auto pt-10">
         <Helmet>
-          <title>ECLA Wallet</title>
+          <title>ECLA Swap</title>
         </Helmet>
         <Header/>
         <div className="inner_bg rounded flex justify-between text-white text-xs mt-16 mx-auto w-fit gap-2">

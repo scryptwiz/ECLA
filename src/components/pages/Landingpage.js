@@ -55,7 +55,7 @@ const Landingpage = () => {
                 <span className="sm:w-1/2 w-full">
                     <h1 className="text-3xl trade_title font-medium">Trade Seamlessly <br/> like you're home.</h1>
                     <p className="mt-3 text-gray-300 text-xs">Swap, earn, and build on the leading decentralized <br/> crypto trading protocol.</p>
-                    <span className="flex gap-10 items-center mt-6 text-white text-sm flex-wrap">
+                    <span className="flex sm:gap-10 gap-4 items-center mt-6 text-white text-sm flex-wrap">
                         <button className="py-2.5 px-7 trade">Trade</button>
                         <button className="py-2.5 px-7 border border-white rounded-full">Connect Wallet</button>
                     </span>
@@ -70,7 +70,7 @@ const Landingpage = () => {
                 <span className="sm:w-1/2 w-full">
                     <h1 className="text-3xl trade_title font-medium">An evolving community <br/> for an evolving DeFi <br/> landscape</h1>
                     <p className="mt-3 text-gray-300 text-xs">Swap, earn, and build on the leading decentralized <br/> crypto trading protocol.</p>
-                    <span className="flex gap-10 items-center mt-6 text-white text-sm flex-wrap">
+                    <span className="flex sm:gap-10 gap-4 items-center mt-6 text-white text-sm flex-wrap">
                         <button className="py-2.5 px-7 trade">Trade</button>
                         <button className="py-2.5 px-7 border border-white rounded-full">Connect Wallet</button>
                     </span>

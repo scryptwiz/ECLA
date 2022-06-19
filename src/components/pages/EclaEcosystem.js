@@ -18,8 +18,8 @@ const EclaEcosystem = () => {
                   <span className="flex md:gap-10 gap-5 mt-10 mx-auto flex-wrap items-center justify-center">
                     <button className="text-sm text-white connect_btn px-8 py-2">Roadmap</button>
                     <button className="text-sm px-8 py-2 bg-white whitepaper_btn">Road Whitepaper</button>
-                    <img src="/assets/eclaLogo3.png" className="h-24 md:h-32 absolute md:left-20 xl:left-52 left-5 bottom-0 ecla_logo_3" alt="Ecla Logo"/>
-                    <img src="/assets/eclipse.png" className="h-32 absolute md:right-20 right-0 bottom-0 md:bottom-1" alt="Eclipse"/>
+                    <img src="/assets/EcosysImages/eclaLogo3.png" className="h-24 md:h-32 absolute md:left-20 xl:left-52 left-5 bottom-0 ecla_logo_3" alt="Ecla Logo"/>
+                    <img src="/assets/EcosysImages/eclipse.png" className="h-32 absolute md:right-20 right-0 bottom-0 md:bottom-1" alt="Eclipse"/>
                   </span>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const EclaEcosystem = () => {
                     <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
                 </span>
                 <span className="md:w-4/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/building.png" className="md:h-full h-32 mx-auto" alt="Database"/>
+                    <img src="/assets/EcosysImages/building.png" className="md:h-full h-32 mx-auto" alt="Database"/>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>
@@ -54,13 +54,13 @@ const EclaEcosystem = () => {
                     <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
                 </span>
                 <span className="md:w-4/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/slogo.png" className="md:h-full h-32 mx-auto" alt="DollarSign"/>
+                    <img src="/assets/EcosysImages/slogo.png" className="md:h-full h-32 mx-auto" alt="DollarSign"/>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>
               <div className="w-full flex items-center justify-between mt-10 md:flex-row flex-col">
                 <span className="md:w-4/12 w-full md:mt-0 mb-5">
-                    <img src="/assets/bigleaves.png" className="md:h-full h-32 mx-auto" alt="Leaves"/>
+                    <img src="/assets/EcosysImages/bigleaves.png" className="md:h-full h-32 mx-auto" alt="Leaves"/>
                 </span>
                 <span className="md:w-6/12 w-full">
                     <h1 className="text-xl font-semibold ecosysTitles">Ecla Reality</h1>
@@ -76,7 +76,7 @@ const EclaEcosystem = () => {
                     <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
                 </span>
                 <span className="md:w-4/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/smallleaves.png" className="md:h-full h-32 mx-auto" alt="SmallLeaves"/>
+                    <img src="/assets/EcosysImages/smallleaves.png" className="md:h-full h-32 mx-auto" alt="SmallLeaves"/>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>
@@ -87,7 +87,7 @@ const EclaEcosystem = () => {
                     <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
                 </span>
                 <span className="md:w-5/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/buildings.png" className="md:h-full h-32 mx-auto" alt="Connections"/>
+                    <img src="/assets/EcosysImages/buildings.png" className="md:h-full h-32 mx-auto" alt="Connections"/>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>
