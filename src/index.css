@@ -100,19 +100,19 @@ code {
   background-size:100%;
 }
 .man_image {
-  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),url('/public/assets/man.png');
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),url('/public/assets/backgoundImages/man.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 .space {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('/public/assets/pilot.png');
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('/public/assets//backgoundImages/pilot.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 .create {
-  background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url('/public/assets/shapes.png');
+  background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url('/public/assets/backgoundImages/shapes.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -132,8 +132,8 @@ code {
 }
 .spiral_bg {
   background-repeat: no-repeat!important;
-  background-size: 120%!important;
-  background: linear-gradient(rgba(23, 24, 64,0.7), rgba(23, 24, 64,0.7)),url('/public/assets/spiral_bg.svg');
+  background-size: 300vh!important;
+  background: linear-gradient(rgba(23, 24, 64,0.7), rgba(23, 24, 64,0.7)),url('/public/assets/backgoundImages/spiral_bg.svg');
 }
 .geometric_bg {
   background-image: url('/public/assets/realityImages/geometricShape.png');
@@ -149,15 +149,30 @@ code {
 }
 .ecosys_hero{
   background-repeat: no-repeat!important; 
-  background-size: 100% !important;
+  background-size: 170vh !important;
   background-position: left;
-  background: linear-gradient(rgba(23, 24, 64,0.7), rgba(23, 24, 64,0.7)),url('/public/assets/spiral_bg.svg');
+  background: linear-gradient(rgba(23, 24, 64,0.7), rgba(23, 24, 64,0.7)),url('/public/assets/backgoundImages/spiral_bg.svg');
   background-color: #171840;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 60% 100%, 50% 100%, 0 90%);
 }
 .whitepaper_btn {
   color: #0C66F1;
   border-radius: 97px;
+}
+.archi {
+  background: url('/public/assets/EcosysImages/arch.png');
+  background-size: cover!important;
+  background-position: bottom !important;
+  background-repeat: no-repeat!important;
+}
+.main_crypto_cont {
+  top: 70px;
+  margin: auto;
+  background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
+}
+.cryto_logo {
+  top: -70px;
+  left: 20px;
 }
 .active_eco {
   background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
