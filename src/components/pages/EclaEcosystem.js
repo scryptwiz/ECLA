@@ -105,13 +105,13 @@ const EclaEcosystem = () => {
           </div>
           <div className="relative">
             <div className="h-10"></div>
-            <div className="flex md:flex-row flex-col w-7/12 mx-auto rounded-xl items-center relative main_crypto_cont">
-              <div className="h-52 w-2/6 relative">
-                <img src="/assets/EcosysImages/cryptoLogo.png" className="h-58 absolute cryto_logo" alt="Crypto Logo"/>
+            <div className="flex md:flex-row flex-col md:w-7/12 w-10/12 mx-auto rounded-xl items-center relative main_crypto_cont">
+              <div className="sm:h-32 md:h-52 h-28 md:w-2/6 w-5/6 relative">
+                <img src="/assets/EcosysImages/cryptoLogo.png" className="h-56 absolute cryto_logo" alt="Crypto Logo"/>
               </div>
-              <span className="ml-10 w-4/6 text-white">
+              <span className="md:ml-10 md:w-4/6 w-5/6 text-white py-7 md:py-0">
                 <h4 className="text-xl font-semibold">The ECLA Token (ECLA)</h4>
-                <p className="text-xs mt-2 w-4/5">It is an all-in-one interface to access the ECLA token economy. We are continuing to upgrade the ECLAWallet in order to support increasing composability and the seamless transfer of value across chains.</p>
+                <p className="text-xs mt-2 sm:w-4/5 w-full">It is an all-in-one interface to access the ECLA token economy. We are continuing to upgrade the ECLAWallet in order to support increasing composability and the seamless transfer of value across chains.</p>
                 <Link to='/' className="underline text-xs mt-3">Read more</Link>
               </span>
             </div>
