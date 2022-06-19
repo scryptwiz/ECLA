@@ -10,7 +10,7 @@ const EclaEcosystem = () => {
         <Helmet>
             <title>Ecla Ecosystem</title>
         </Helmet>
-          <div className="ecosys_hero h-screen bg-white py-10">
+          <div className="ecosys_hero h-screen py-10">
               <div className="w-11/12 mx-auto flex flex-col justify-between h-full">
                 <Header/>
                 <div className="h-4/6 w-full flex flex-col">
