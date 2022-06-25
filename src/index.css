@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  outline: none!important;
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -20,6 +23,9 @@ code {
 .connect_btn {
   background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
   border-radius: 97px;
+}
+.transfer_btn {
+  background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
 }
 .filter_btn {
   background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
@@ -187,6 +193,10 @@ code {
 ::-webkit-scrollbar {
   width: 7px;
   height: 5px;
+}
+.dropdown_content {
+  background: rgb(23, 24, 64);
+  width: 100vw!important;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
