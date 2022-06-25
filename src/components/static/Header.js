@@ -162,7 +162,7 @@ const Header = () => {
                     </Transition>
                 </Menu>
                 <li>
-                    <Link to='/eclareality' className="text-white text-sm tracking-wide font-medium">Ecosystem</Link>
+                    <Link to='/swap' className="text-white text-sm tracking-wide font-medium">Ecosystem</Link>
                 </li>
                 <Menu as="div" className="text-left">
                     <div>
@@ -290,7 +290,7 @@ const Header = () => {
                                     <hr className="border-gray-400 py-3"/>
                                 </Menu.Item>
                                 <Menu.Item>
-                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>EClA cookbook</Link>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>ECLA cookbook</Link>
                                 </Menu.Item>
                                 <Menu.Item>
                                     <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>ECLADev</Link>
@@ -398,7 +398,7 @@ const Header = () => {
                     </Transition>
                 </Menu>
                 <li>
-                    <Link to='/eclareality' className="text-white text-sm tracking-wide font-medium px-4">Ecosystem</Link>
+                    <Link to='/swap' className="text-white text-sm tracking-wide font-medium px-4">Ecosystem</Link>
                 </li>
                 <Menu as="div" className="text-left">
                     <div>

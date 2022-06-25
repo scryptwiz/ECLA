@@ -25,7 +25,7 @@ const Homepage = () => {
           <button onClick={()=>setConnectPage('transfer')} className={`px-3 font-medium py-3 ${connectPage==='transfer' ? 'active' : null}`}>Transfer</button>
           <button onClick={()=>setConnectPage('NFTs')} className={`pl-3 pr-5 font-medium py-3 ${connectPage==='NFTs' ? 'active' : null}`}>NFTs</button>
         </div>
-        <div className={` ${connectPage!=='transfer'&&'inner_bg'} mx-auto lg:w-10/12 w-11/12  mt-10 flex flex-col justify-between p-5 rounded`}>
+        <div className={` ${connectPage!=='transfer'?'inner_bg p-5 w-11/12': 'p-0 w-full'} mx-auto lg:w-10/12  mt-10 flex flex-col justify-between rounded`}>
           <div className="flex lg:flex-row flex-col justify-between rounded">
             <div className={`lg:w-4/6 w-full md:p-5 ${connectPage==='transfer'&&'hidden'}`}>
                 <div className="flex flex-col md:flex-row justify-between">
