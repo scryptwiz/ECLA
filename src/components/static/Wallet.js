@@ -1,4 +1,4 @@
-const Transfer = () => {
+const Wallet = () => {
   return (
     <div className="lg:w-5/12 md:w-11/12 w-full mx-auto border-2 border-gray-700 rounded-xl flex flex-col justify-between lg:p-5 md:p-7 p-5 md:mt-0 mt-5" id="swap_bg">
         <div>
@@ -16,7 +16,7 @@ const Transfer = () => {
             <p className="text-gray-100 font-medium">Address:</p>
             <div className="relative w-4/5">
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                    <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                    <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path></svg>
                 </div>
                 <input type="text" id="voice-search" className="bg-transparent border border-gray-500 text-gray-100 text-sm rounded-lg focus:ring-gray-300 focus:border-gray-300 block w-full pl-10 p-2.5" placeholder="Public Address" required/>
             </div>
@@ -34,9 +34,9 @@ const Transfer = () => {
             <p className="text-gray-100 font-medium">Assets:</p>
             <input type='text' placeholder="Assets" className="px-3 py-2.5 w-4/5 rounded-lg border border-gray-500 bg-transparent outline-none text-gray-300 text-sm focus:ring-gray-300 focus:border-gray-300" required/>
         </div>
-        <button className="transfer_btn rounded font-semibold text-xl lg:mt-3 mt-10 py-2.5 text-white ">Transfer</button>
+        <button className="transfer_btn rounded font-semibold text-sm lg:mt-3 mt-10 py-2.5 text-white ">Transfer</button>
     </div>
   )
 }
 
-export default Transfer
+export default Wallet

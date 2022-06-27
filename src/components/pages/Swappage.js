@@ -6,12 +6,14 @@ import Limits from "../static/Limit"
 import Swap from "../static/Swap"
 import {Link} from 'react-router-dom'
 import Table from "../static/Table"
-import Transfer from "../static/Transfer"
+import Wallet from "../static/Wallet"
+import Transfers from "../static/Transfers"
+import Liquidity from "../static/Liquidity"
 const Homepage = () => {
   const [connectPage, setConnectPage] = useState('swap')
   return (
     <div className="spiral_bg overflow-x-hidden">
-      <div className="main_bg w-11/12 mx-auto pt-10">
+      <div className={`main_bg w-11/12 mx-auto pt-10 ${connectPage==='transfers'|| connectPage==='liquidity' || connectPage==='balance'?'h-screen overflow-y-auto' : ''}`}>
         <Helmet>
           <title>ECLA {connectPage}</title>
         </Helmet>
@@ -22,12 +24,12 @@ const Homepage = () => {
           <button onClick={()=>setConnectPage('liquidity')} className={`px-3 font-medium py-3 ${connectPage==='liquidity' ? 'active' : null}`}>Liquidity</button>
           <button onClick={()=>setConnectPage('wallet')} className={`px-3 font-medium py-3 ${connectPage==='wallet' ? 'active' : null}`}>Wallet</button>
           <button onClick={()=>setConnectPage('balance')} className={`px-3 font-medium py-3 ${connectPage==='balance' ? 'active' : null}`}>Balance</button>
-          <button onClick={()=>setConnectPage('transfer')} className={`px-3 font-medium py-3 ${connectPage==='transfer' ? 'active' : null}`}>Transfer</button>
+          <button onClick={()=>setConnectPage('transfers')} className={`px-3 font-medium py-3 ${connectPage==='transfers' ? 'active' : null}`}>Transfers</button>
           <button onClick={()=>setConnectPage('NFTs')} className={`pl-3 pr-5 font-medium py-3 ${connectPage==='NFTs' ? 'active' : null}`}>NFTs</button>
         </div>
-        <div className={` ${connectPage!=='transfer'?'inner_bg p-5 w-11/12': 'p-0 w-full'} mx-auto lg:w-10/12  mt-10 flex flex-col justify-between rounded`}>
+        <div className={` ${connectPage!=='wallet'&&connectPage!=='liquidity'?'inner_bg p-5 w-11/12': 'p-0 w-full'} mx-auto lg:w-10/12  mt-10 flex flex-col justify-between rounded`}>
           <div className="flex lg:flex-row flex-col justify-between rounded">
-            <div className={`lg:w-4/6 w-full md:p-5 ${connectPage==='transfer'&&'hidden'}`}>
+            <div className={`lg:w-4/6 w-full md:p-5 ${connectPage==='wallet' || connectPage==='liquidity'||connectPage==='transfers'||connectPage==='balance'? 'hidden' : ''}`}>
                 <div className="flex flex-col md:flex-row justify-between">
                     <span className="flex justify-between md:flex-row flex-col w-10/12">
                         <span>
@@ -63,7 +65,7 @@ const Homepage = () => {
 
                 </div>
             </div>
-            {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidityBtn' ? <Swap/> : connectPage==='transfer' ? <Transfer/> :<Swap/>}
+            {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidity' ? <Liquidity/> : connectPage==='wallet' ? <Wallet/> : connectPage==='transfers' ? <Transfers/> : connectPage==='balance' ? <Transfers/> :<Swap/>}
           </div>
         {connectPage==='limit'&&<Table/>}
         </div>
