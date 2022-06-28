@@ -11,6 +11,7 @@ import Transfers from "../static/Transfers"
 import Liquidity from "../static/Liquidity"
 const Homepage = () => {
   const [connectPage, setConnectPage] = useState('swap')
+  const [time, setTime] = useState('24H')
   return (
     <div className="spiral_bg overflow-x-hidden">
       <div className={`main_bg w-11/12 mx-auto pt-10 ${connectPage==='transfers'|| connectPage==='liquidity' || connectPage==='balance'?'h-screen overflow-y-auto' : ''}`}>
@@ -27,7 +28,7 @@ const Homepage = () => {
           <button onClick={()=>setConnectPage('transfers')} className={`px-3 font-medium py-3 ${connectPage==='transfers' ? 'active' : null}`}>Transfers</button>
           <button onClick={()=>setConnectPage('NFTs')} className={`pl-3 pr-5 font-medium py-3 ${connectPage==='NFTs' ? 'active' : null}`}>NFTs</button>
         </div>
-        <div className={` ${connectPage!=='wallet'&&connectPage!=='liquidity'?'inner_bg p-5 w-11/12': 'p-0 w-full'} mx-auto lg:w-10/12  mt-10 flex flex-col justify-between rounded`}>
+        <div className={` ${connectPage!=='wallet'&&connectPage!=='liquidity'?'inner_bg p-5 md:w-11/12 w-full': 'p-0 w-full'} mx-auto lg:w-10/12  mt-10 flex flex-col justify-between rounded`}>
           <div className="flex lg:flex-row flex-col justify-between rounded">
             <div className={`lg:w-4/6 w-full md:p-5 ${connectPage==='wallet' || connectPage==='liquidity'||connectPage==='transfers'||connectPage==='balance'? 'hidden' : ''}`}>
                 <div className="flex flex-col md:flex-row justify-between">
@@ -49,10 +50,10 @@ const Homepage = () => {
                         </span>
                         <div className="mt-3 md:mt-0">
                             <span className="rounded-lg h-fit w-fit flex border-2 border-gray-600 text-white time_bg">
-                                <Link className="rounded-lg py-2.5 px-3.5 text-xs font-semibold active_time" to='/'>24H</Link>
-                                <Link className="rounded-lg py-2.5 px-3.5 text-xs font-semibold" to='/'>1W</Link>
-                                <Link className="rounded-lg py-2.5 px-3.5 text-xs font-semibold" to='/'>1M</Link>
-                                <Link className="rounded-lg py-2.5 px-3.5 text-xs font-semibold" to='/'>1Y</Link>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="24H"&&"active_time"}`} onClick={()=>setTime("24H")}>24H</button>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="1W"&&"active_time"}`} onClick={()=>setTime("1W")}>1W</button>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="1M"&&"active_time"}`} onClick={()=>setTime("1M")}>1M</button>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="1Y"&&"active_time"}`} onClick={()=>setTime("1Y")}>1Y</button>
                             </span>
                             <p className="text-gray-200 text-xs mt-2 md:text-right text-left">Jun 16, 2022, 10:11PM</p>
                         </div>
