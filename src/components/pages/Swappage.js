@@ -4,14 +4,25 @@ import Footer from "../static/Footer"
 import Header from "../static/Header"
 import Limits from "../static/Limit"
 import Swap from "../static/Swap"
-import {Link} from 'react-router-dom'
 import Table from "../static/Table"
 import Wallet from "../static/Wallet"
 import Transfers from "../static/Transfers"
 import Liquidity from "../static/Liquidity"
+import axios from "axios"
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux';
+// import Charts from "../static/Chart"
 const Homepage = () => {
+  const dispatch = useDispatch();
+  const topCoin = useSelector(state=>state.topCoin);
+  const bottomCoin = useSelector(state=>state.bottomCoin);
   const [connectPage, setConnectPage] = useState('swap')
   const [time, setTime] = useState('24H')
+  const qucikPick = (coinId) => {
+    axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`).then(res=>{
+      dispatch({type:"SET_TOP_COIN", payload:{coinInfo:res.data}});
+    })
+  }
   return (
     <div className="spiral_bg overflow-x-hidden">
       <div className={`main_bg w-11/12 mx-auto pt-10 ${connectPage==='transfers'|| connectPage==='liquidity' || connectPage==='balance'?'h-screen overflow-y-auto' : ''}`}>
@@ -35,17 +46,17 @@ const Homepage = () => {
                     <span className="flex justify-between md:flex-row flex-col w-10/12">
                         <span>
                             <span className="flex items-center">
-                                <Link to='/'>
+                                <button onClick={()=>qucikPick('bitcoin')}>
                                   <img src="/assets/ecl.png" className="h-7" alt="ECLA LOGO"/>
-                                </Link>
-                                <Link to='/'>
+                                </button>
+                                <button onClick={()=>qucikPick('binancecoin')}>
                                   <img src="/assets/bin.png" className="h-7 ml-2" alt="Binance LOGO"/>
-                                </Link>
-                                <Link to=''>
+                                </button>
+                                <button onClick={()=>qucikPick('matic-network')}>
                                   <img src="/assets/exchange.png" className="h-7 ml-2" alt="Polygon Logo"/>
-                                </Link>
+                                </button>
                             </span>
-                            <h1 className="font-semibold text-white text-3xl mt-2">1001.203<sub className="text-gray-400 ml-1 text-xs">BNB/ECL</sub></h1>
+                            {topCoin.coinInfo&&bottomCoin.coinInfo? (<h1 className="font-semibold text-white text-3xl mt-2">1001.203<sub className="text-gray-400 ml-1 text-xs uppercase">{topCoin.coinInfo.symbol}/{bottomCoin.coinInfo.symbol}</sub> </h1>) : ''}
                             <small id="rate" className="text-xs">+0.333(+0.72%)</small>
                         </span>
                         <div className="mt-3 md:mt-0">
@@ -62,6 +73,7 @@ const Homepage = () => {
                         <img src="/assets/clipboard.png" className="h-5" alt="Clipboard" />
                     </span>
                 </div>
+                {/* <Charts/> */}
                 <div id="chart" className="mt-5 bg-purple-300 h-64">
 
                 </div>

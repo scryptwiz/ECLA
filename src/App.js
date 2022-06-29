@@ -6,11 +6,15 @@ import EclaReality from './components/pages/EclaReality';
 import Landingpage from './components/pages/Landingpage';
 import MarketPlace from './components/pages/MarketPlace';
 import Swappage from './components/pages/Swappage';
+import {createStore} from "redux"
+import coinReducer from './store/Store';
+import {Provider} from "react-redux";
+const coinStore = createStore(coinReducer)
 function App() {
   return (
    <BrowserRouter>
       <Routes>
-        <Route path='/swap' element={<Swappage/>}></Route>
+        <Route path='/swap' element={<Provider store={coinStore}><Swappage/></Provider>}></Route>
         <Route path='/' element={<Landingpage/>}></Route>
         <Route path='/eclablockchain' element={<Eclablockchain/>}></Route>
         <Route path='/eclareality' element={<EclaReality/>}></Route>
