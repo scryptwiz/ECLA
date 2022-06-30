@@ -11,13 +11,13 @@ import Liquidity from "../static/Liquidity"
 import axios from "axios"
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux';
-// import Charts from "../static/Chart"
+import Chart from "../static/Chart"
 const Homepage = () => {
   const dispatch = useDispatch();
   const topCoin = useSelector(state=>state.topCoin);
   const bottomCoin = useSelector(state=>state.bottomCoin);
   const [connectPage, setConnectPage] = useState('swap')
-  const [time, setTime] = useState('24H')
+  const time = useSelector(state=>state.fetchTime.time);
   const qucikPick = (coinId) => {
     axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`).then(res=>{
       dispatch({type:"SET_TOP_COIN", payload:{coinInfo:res.data}});
@@ -61,10 +61,10 @@ const Homepage = () => {
                         </span>
                         <div className="mt-3 md:mt-0">
                             <span className="rounded-lg h-fit w-fit flex border-2 border-gray-600 text-white time_bg">
-                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="24H"&&"active_time"}`} onClick={()=>setTime("24H")}>24H</button>
-                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="1W"&&"active_time"}`} onClick={()=>setTime("1W")}>1W</button>
-                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="1M"&&"active_time"}`} onClick={()=>setTime("1M")}>1M</button>
-                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time==="1Y"&&"active_time"}`} onClick={()=>setTime("1Y")}>1Y</button>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time===1?"active_time": ''}`} onClick={()=>dispatch({type:"SET_FETCH_TIME", payload:{time:1}})}>24H</button>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time===7&&"active_time"}`} onClick={()=>dispatch({type:"SET_FETCH_TIME", payload:{time:7}})}>1W</button>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time===30&&"active_time"}`} onClick={()=>dispatch({type:"SET_FETCH_TIME", payload:{time:30}})}>1M</button>
+                                <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time===365&&"active_time"}`} onClick={()=>dispatch({type:"SET_FETCH_TIME", payload:{time:365}})}>1Y</button>
                             </span>
                             <p className="text-gray-200 text-xs mt-2 md:text-right text-left">Jun 16, 2022, 10:11PM</p>
                         </div>
@@ -73,10 +73,10 @@ const Homepage = () => {
                         <img src="/assets/clipboard.png" className="h-5" alt="Clipboard" />
                     </span>
                 </div>
-                {/* <Charts/> */}
-                <div id="chart" className="mt-5 bg-purple-300 h-64">
+                <Chart/>
+                {/* <div id="chart" className="mt-5 bg-purple-300 h-64">
 
-                </div>
+                </div> */}
             </div>
             {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidity' ? <Liquidity/> : connectPage==='wallet' ? <Wallet/> : connectPage==='transfers' ? <Transfers/> : connectPage==='balance' ? <Transfers/> :<Swap/>}
           </div>

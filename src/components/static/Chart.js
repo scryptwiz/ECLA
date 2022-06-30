@@ -1,30 +1,54 @@
-import Chart from 'chart.js/auto';
-import { useEffect, useRef } from 'react';
-const Charts = () => {
-    const chartRef = useRef()
-    useEffect(() => {
-        if (chartRef && chartRef.current) {
-            const labels = ["Red", "Blue", "Yellow", "Green","Green","Green","Green"];
-            const data = {
-                labels: labels,
-                datasets: [{
-                    data: [65, 59, 80, 81, 56, 55, 40],
-                }]
-            };
-            const chartInstance = new Chart(chartRef.current, {
-                type: 'line',
-                data: data,
-              });
-            }
-    }, [])
-    
+import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux'
+import {Line} from 'react-chartjs-2'
+import {Chart as ChartJS} from 'chart.js/auto'
+import axios from 'axios'
+
+const Chart = () => {
+    const [coinData, setCoinData] = useState({
+      labels: [1,2,3,4,5],
+      datasets: [{
+        label: "Compare Coins",
+        data: [1,2,3,4,5],
+        backgroundColor: ['green']
+      }]
+    });
+    const dispatch = useDispatch();
+    const graphDetails = useSelector(state=>state.graphdata);
+    const topCoinDetails = useSelector(state=>state.topCoin);
+    const time = useSelector(state=>state.fetchTime.time)
+    if (!topCoinDetails.coinInfo) {
+    } else {
+      let topCoinId = topCoinDetails.coinInfo.id;
+        axios.get(`https://api.coingecko.com/api/v3/coins/${topCoinId}/market_chart?vs_currency=usd&days=${time}&interval=daily`).then(res=>{
+          dispatch({type:"SET_GRAPH_DATA", payload:{graphInfo:res.data}});
+          setCoinData({
+            labels: graphDetails.graphInfo.prices.map((items)=> items[0]),
+            datasets: [{
+              label: `${topCoinId}`,
+              data: graphDetails.graphInfo.prices.map((items)=> items[1]),
+              backgroundColor: ['green'],
+              color: ['white'],
+            }]
+          })
+        }).catch(err=> {
+          setCoinData({
+            labels: [1,2,3,4,5],
+            datasets: [{
+              label: "Compare Coins",
+              data: [1,2,3,4,5],
+              backgroundColor: ['green']
+            }]
+          })
+        })
+      }
   return (
-    <>
-        <div id="chart" className="mt-5 bg-purple-300 h-64">
-            <canvas ref={chartRef} id="myChart" className='w-full h-full'></canvas>
-        </div>
-    </>
+    <div id="chart" className="mt-5 h-full">
+      <Line data={coinData}/>
+        {/* <button onClick={hello}>hel</button> */}
+    </div>
   )
 }
 
-export default Charts
+export default Chart

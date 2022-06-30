@@ -6,13 +6,23 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@headlessui/react": "^1.6.5",
+    "@material-ui/lab": "^4.0.0-alpha.61",
     "@mui/material": "^5.8.6",
     "@mui/styled-engine-sc": "^5.8.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@visx/axis": "^2.11.1",
+    "@visx/brush": "^2.11.1",
+    "@visx/gradient": "^2.10.0",
+    "@visx/group": "^2.10.0",
+    "@visx/shape": "^2.11.1",
+    "@visx/tooltip": "^2.10.0",
     "axios": "^0.27.2",
     "chart.js": "^3.8.0",
+    "d3-array": "^3.1.6",
+    "date-fns": "^2.28.0",
+    "numeral": "^2.0.6",
     "react": "^18.2.0",
     "react-chartjs-2": "^4.2.0",
     "react-dom": "^18.2.0",
@@ -23,6 +33,7 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
     "styled-components": "^5.3.5",
+    "use-query-params": "^1.2.3",
     "web-vitals": "^2.1.4",
     "workbox-background-sync": "^6.5.3",
     "workbox-broadcast-update": "^6.5.3",
@@ -62,6 +73,9 @@
     ]
   },
   "devDependencies": {
+    "@types/d3-array": "^3.0.3",
+    "@types/numeral": "^2.0.2",
+    "@types/styled-components": "^5.1.25",
     "tailwindcss": "^3.1.3"
   }
 }
