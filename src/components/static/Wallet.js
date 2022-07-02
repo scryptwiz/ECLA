@@ -4,7 +4,7 @@ const Wallet = () => {
         <div>
             <span className="flex justify-center flex-col items-center">
                 <span className="h-12 w-12 rounded-full bg-gray-400"></span>
-                <small className="text-white font-semibold mt-3">712922...120910</small>
+                <small className="text-white font-semibold mt-3 flex gap-3">712922...120910 <img src="/assets/clipboard.svg"  alt="clipboard" className="h-5 cursor-pointer"/></small>
                 <small className="text-white font-semibold mt-3">0 BNB</small>
             </span>
             <hr className="my-3 border-gray-600 border-0.5"/>

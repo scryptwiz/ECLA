@@ -13,6 +13,7 @@ import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux';
 import Chart from "../static/Chart"
 import NFTS from "../static/NFTS"
+import Balance from "../static/Balance"
 const Homepage = () => {
   const dispatch = useDispatch();
   const topCoin = useSelector(state=>state.topCoin);
@@ -47,14 +48,14 @@ const Homepage = () => {
                     <span className="flex justify-between md:flex-row flex-col w-10/12">
                         <span>
                             <span className="flex items-center">
-                                <button onClick={()=>qucikPick('matic-network')}>
-                                  <img src="/assets/icons/ecl.svg" className="h-7" alt="ECLA LOGO"/>
+                                <button onClick={()=>qucikPick('ethereum')}>
+                                  <img src="/assets/icons/eth.svg" className="h-7" alt="Polygon Logo"/>
                                 </button>
                                 <button onClick={()=>qucikPick('binancecoin')}>
                                   <img src="/assets/icons/bin.svg" className="h-7 ml-2" alt="Binance LOGO"/>
                                 </button>
-                                <button onClick={()=>qucikPick('ethereum')}>
-                                  <img src="/assets/icons/eth.svg" className="h-7 ml-2" alt="Polygon Logo"/>
+                                <button onClick={()=>qucikPick('matic-network')}>
+                                  <img src="/assets/icons/ecl.svg" className="h-7 ml-2" alt="ECLA LOGO"/>
                                 </button>
                             </span>
                             {topCoin.coinInfo&&bottomCoin.coinInfo? (<h1 className="font-semibold text-white text-3xl mt-2">1001.203<sub className="text-gray-400 ml-1 text-xs uppercase">{topCoin.coinInfo.symbol}/{bottomCoin.coinInfo.symbol}</sub> </h1>) : ''}
@@ -70,13 +71,13 @@ const Homepage = () => {
                             <p className="text-gray-200 text-xs mt-2 md:text-right text-left">Jun 16, 2022, 10:11PM</p>
                         </div>
                     </span>
-                    <button className="outline-none p-4 rounded-lg border-2 border-gray-600 h-fit w-fit mt-3 md:mt-0" id="clip_bg">
+                    {/* <button className="outline-none p-4 rounded-lg border-2 border-gray-600 h-fit w-fit mt-3 md:mt-0" id="clip_bg">
                         <img src="/assets/clipboard.svg" className="h-5" alt="Clipboard" />
-                    </button>
+                    </button> */}
                 </div>
                 <Chart/>
             </div>
-            {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidity' ? <Liquidity/> : connectPage==='wallet' ? <Wallet/> : connectPage==='transfers' ? <Transfers/> : connectPage==='balance' ? <Transfers/> : connectPage==='nfts' ? <NFTS/> :<Swap/>}
+            {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidity' ? <Liquidity/> : connectPage==='wallet' ? <Wallet/> : connectPage==='transfers' ? <Transfers/> : connectPage==='balance' ? <Balance/> : connectPage==='nfts' ? <NFTS/> :<Swap/>}
           </div>
         {connectPage==='limit'&&<Table/>}
         </div>

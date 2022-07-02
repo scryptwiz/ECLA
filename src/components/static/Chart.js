@@ -9,7 +9,7 @@ const Chart = () => {
     const [coinData, setCoinData] = useState({
       labels: [1,2,3,4,5],
       datasets: [{
-        label: "Compare Coins",
+        label: "Coin Chart",
         data: [1,2,3,4,5],
         backgroundColor: ['green']
       }]

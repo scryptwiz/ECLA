@@ -1,7 +1,7 @@
 import Helmet from "react-helmet"
 import { Link } from "react-router-dom"
 import DarkFooter from "../static/DarkFooter"
-import Header from "../static/Header"
+import EcosystemNav from "../static/EcosystemNav"
 
 const EclaEcosystem = () => {
   return (
@@ -12,7 +12,7 @@ const EclaEcosystem = () => {
         </Helmet>
           <div className="ecosys_hero h-screen py-10">
               <div className="w-11/12 mx-auto flex flex-col justify-between h-full">
-                <Header/>
+                <EcosystemNav/>
                 <div className="h-4/6 w-full flex flex-col">
                   <h1 className="sm:text-5xl md:text-5xl md:w-3/5 w-full text-4xl font-bold text-white mx-auto text-center">Blockchain Ecosystem for Real People</h1>
                   <span className="flex md:gap-10 gap-5 mt-10 mx-auto flex-wrap items-center justify-center">
@@ -49,9 +49,11 @@ const EclaEcosystem = () => {
               <hr className="border-gray-400 mt-10"/>
               <div className="w-full flex items-center justify-between mt-10 md:flex-row flex-col">
                 <span className="md:w-6/12 w-full">
-                    <h1 className="text-xl font-semibold ecosysTitles">Streetwalls  NFT Marketplace</h1>
+                    <h1 className="text-xl font-semibold ecosysTitles">NFT Marketplace</h1>
                     <p className="text-xs text-gray-700 mt-5">The first of its kind Marketplace for "Family-life themed" NFTs. Users will be able to access, buy, sell and mint NFTs using the $ECLA token deployed on the ECLA CHAIN.</p>
-                    <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
+                    <Link to='/eclamarket'>
+                      <button className="connect_btn px-8 py-2 mt-7 text-white">Explore</button>
+                    </Link>
                 </span>
                 <span className="md:w-4/12 w-full md:mt-0 mt-5">
                     <img src="/assets/EcosysImages/slogo.png" className="md:h-full h-32 mx-auto" alt="DollarSign"/>
@@ -65,7 +67,9 @@ const EclaEcosystem = () => {
                 <span className="md:w-6/12 w-full">
                     <h1 className="text-xl font-semibold ecosysTitles">Ecla Reality</h1>
                     <p className="text-xs text-gray-700 mt-5">ECLA REALITY is a Virtual Reality (V.R) and Augmented Reality (AR) environment that is powered or run by the Metaverse. This environment is perceived through a device known as a Virtual Reality headset or helmet. </p>
-                    <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
+                    <Link to='/eclareality'>
+                      <button className="connect_btn px-8 py-2 mt-7 text-white">Discover</button>
+                    </Link>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>
@@ -107,7 +111,7 @@ const EclaEcosystem = () => {
             <div className="h-10"></div>
             <div className="flex md:flex-row flex-col md:w-7/12 w-10/12 mx-auto rounded-xl items-center relative main_crypto_cont">
               <div className="sm:h-32 md:h-52 h-28 md:w-2/6 w-5/6 relative">
-                <img src="/assets/EcosysImages/cryptoLogo.png" className="h-56 absolute cryto_logo" alt="Crypto Logo"/>
+                <img src="/assets/EcosysImages/ECLACoin.png" className="h-56 absolute cryto_logo" alt="Crypto Logo"/>
               </div>
               <span className="md:ml-10 md:w-4/6 w-5/6 text-white py-7 md:py-0">
                 <h4 className="text-xl font-semibold">The ECLA Token (ECLA)</h4>
@@ -115,7 +119,7 @@ const EclaEcosystem = () => {
                 <Link to='/' className="underline text-xs mt-3">Read more</Link>
               </span>
             </div>
-            <div className="archi py-28 flex flex-col justify-center items-center px-5">
+            <div id="community" className="archi py-28 flex flex-col justify-center items-center px-5">
               <img src="/assets/EcosysImages/structure.png" alt="Structure"/>
               <img src="/assets/EcosysImages/coinLogos.png" className="sm:h-7 h-5 mt-10" alt="Coin Logos"/>
             </div>

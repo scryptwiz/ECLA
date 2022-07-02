@@ -9,14 +9,14 @@ const MarketplaceNav = () => {
         setToggle(false)
     }
   return (
-    <nav className="flex justify-between">
-        <img src="/assets/logos/swapLogo.svg" alt="ECLA LOGO" />
+    <nav className="flex items-center justify-between">
+        <img src="/assets/logos/marketplace.svg" className="h-10" alt="ECLA LOGO" />
         <ul className="lg:flex hidden items-center gap-9">
             <li>
-                <Link to='/' className="text-white text-sm tracking-wide font-medium underline">Home</Link>
+                <Link to='/eclamarket' className="text-white text-sm tracking-wide font-medium underline">Home</Link>
             </li>
             <li>
-                <Link to='/' className="text-white text-sm tracking-wide font-medium">Explore</Link>
+                <Link to='/eclareality' className="text-white text-sm tracking-wide font-medium">Explore</Link>
             </li>
             <li>
                 <Link to='/' className="text-white text-sm tracking-wide font-medium">Developer</Link>

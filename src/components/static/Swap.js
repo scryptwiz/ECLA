@@ -71,7 +71,7 @@ const Swap = () => {
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description" sx={styles.modal} >
                         <Box sx={styles.style}>
                         <Typography id="modal-modal-title" variant="h6" component="h2">Select A Token</Typography>
-                        <hr />
+                        <input type='search' className='border-gray-400 border rounded px-3 py-1.5 w-full mt-3' placeholder='Search'/>
                         {allCoins.map((items)=>{
                             return (
                                 <Typography key={items.id} id="modal-modal-description" sx={{ mt: 2 }}><Button onClick={()=>topToken(items)} variant='text' size='small'><img className='w-10 h-10 rounded-full' src={items.image} alt='Coin Logo'/><span className='ml-2 flex flex-col gap-2 items-start'><p>{items.name}</p><p className='font-semibold'>{items.symbol}</p></span></Button></Typography>
@@ -91,7 +91,7 @@ const Swap = () => {
                     <Modal open={bottomOpen} onClose={handleBottomClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description" sx={styles.modal} >
                         <Box sx={styles.style}>
                         <Typography id="modal-modal-title" variant="h6" component="h2">Select A Token</Typography>
-                        <hr />
+                        <input type='search' className='border-gray-400 border rounded px-3 py-1.5 w-full mt-3' placeholder='Search'/>
                         {allCoins.map((items)=>{
                             return (
                                 <Typography key={items.id} id="modal-modal-description" sx={{ mt: 2 }}><Button onClick={()=>bottomToken(items)} variant='text' size='small'><img className='w-10 h-10 rounded-full' src={items.image} alt='Coin Logo'/><span className='ml-2 flex flex-col gap-2 items-start'><p>{items.name}</p><p className='font-semibold'>{items.symbol}</p></span></Button></Typography>

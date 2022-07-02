@@ -15,11 +15,11 @@ function App() {
    <BrowserRouter>
       <Routes>
         <Route path='/swap' element={<Provider store={coinStore}><Swappage/></Provider>}></Route>
-        <Route path='/' element={<Landingpage/>}></Route>
+        <Route path='/swaplanding' element={<Landingpage/>}></Route>
         <Route path='/eclablockchain' element={<Eclablockchain/>}></Route>
         <Route path='/eclareality' element={<EclaReality/>}></Route>
         <Route path='/eclamarket' element={<MarketPlace/>}></Route>
-        <Route path='/eclaecosystem' element={<EclaEcosystem/>}></Route>
+        <Route path='/' element={<EclaEcosystem/>}></Route>
       </Routes>
    </BrowserRouter>
   );

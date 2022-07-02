@@ -5,19 +5,16 @@ const Balance = () => {
           <thead className="text-xs text-gray-200 uppercase">
               <tr>
                   <th scope="col" className="px-6 py-3">
-                      Token
+                      name
                   </th>
                   <th scope="col" className="px-6 py-3">
-                      From
+                      Symbol
                   </th>
                   <th scope="col" className="px-6 py-3">
-                      To
+                      Balance
                   </th>
                   <th scope="col" className="px-6 py-3">
-                      Value
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                      Hash
+                      Address
                   </th>
               </tr>
           </thead>
@@ -31,9 +28,6 @@ const Balance = () => {
                   </td>
                   <td className="px-6 py-4">
                       Laptop
-                  </td>
-                  <td className="px-6 py-4">
-                      $2999
                   </td>
                   <td className="px-6 py-4">
                       $2999
@@ -52,9 +46,6 @@ const Balance = () => {
                   <td className="px-6 py-4">
                       $1999
                   </td>
-                  <td className="px-6 py-4">
-                      $2999
-                  </td>
               </tr>
               <tr>
                   <th scope="row" className="px-6 py-4 font-medium text-gray-200 whitespace-nowrap">
@@ -68,9 +59,6 @@ const Balance = () => {
                   </td>
                   <td className="px-6 py-4">
                       $99
-                  </td>
-                  <td className="px-6 py-4">
-                      $2999
                   </td>
               </tr>
           </tbody>

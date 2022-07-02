@@ -201,8 +201,11 @@ code {
   height: 5px;
 }
 .dropdown_content {
-  background: rgb(23, 24, 64);
+  background: rgb(27, 28, 71);
   width: 100vw!important;
+}
+.ecosys_dropdown {
+  background: rgb(27, 28, 71);
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 

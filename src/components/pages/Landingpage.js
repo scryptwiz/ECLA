@@ -1,4 +1,5 @@
 import Helmet from "react-helmet"
+import { Link } from "react-router-dom"
 import Header from "../static/Header"
 
 const Landingpage = () => {
@@ -18,7 +19,7 @@ const Landingpage = () => {
                     <p className="text-xs text-gray-300 mt-4">Swap, earn, and build on the leading decentralized <br/> crypto trading protocol.</p>
                     <span className="flex mt-7 gap-5 flex-wrap">
                         <button className="connect_btn px-7 py-2.5 text-white text-sm">Connect Wallet</button>
-                        <button className="trade px-7 py-2.5 text-white text-sm">Trade</button>
+                        <Link to='/swap' className="trade px-7 py-2.5 text-white text-sm">Trade</Link>
                     </span>
                 </span>
                 <span className="w-1/2 justify-end items-center md:flex hidden">
@@ -56,12 +57,12 @@ const Landingpage = () => {
                     <h1 className="text-3xl trade_title font-medium">Trade Seamlessly <br/> like you're home.</h1>
                     <p className="mt-3 text-gray-300 text-xs">Swap, earn, and build on the leading decentralized <br/> crypto trading protocol.</p>
                     <span className="flex sm:gap-10 gap-4 items-center mt-6 text-white text-sm flex-wrap">
-                        <button className="py-2.5 px-7 trade">Trade</button>
-                        <button className="py-2.5 px-7 border border-white rounded-full">Connect Wallet</button>
+                        <Link to='/swap' className="py-2.5 px-7 trade">Trade</Link>
+                        <button className="py-2.5 px-7 border border-white rounded-full">Download Wallet</button>
                     </span>
                 </span>
                 <span className="w-1/2 hidden sm:flex justify-end">
-                   <img src="/assets/bbelogo.svg" className="h-60" alt="BBE Logo" />
+                   <img src="/assets/logos/bbelogo.svg" className="h-60" alt="BBE Logo" />
                 </span>
             </div>
         </div>
@@ -71,12 +72,12 @@ const Landingpage = () => {
                     <h1 className="text-3xl trade_title font-medium">An evolving community <br/> for an evolving DeFi <br/> landscape</h1>
                     <p className="mt-3 text-gray-300 text-xs">Swap, earn, and build on the leading decentralized <br/> crypto trading protocol.</p>
                     <span className="flex sm:gap-10 gap-4 items-center mt-6 text-white text-sm flex-wrap">
-                        <button className="py-2.5 px-7 trade">Trade</button>
-                        <button className="py-2.5 px-7 border border-white rounded-full">Connect Wallet</button>
+                        <Link to='/swap' className="py-2.5 px-7 trade">Trade</Link>
+                        <Link to="https://discord.gg/NH3QBa4p" className="py-2.5 px-7 border border-white rounded-full">Join Our Community</Link>
                     </span>
                 </span>
                 <span className="w-1/2 sm:flex hidden justify-end">
-                   <img src="/assets/logos/eclaRingLogo.svg" className="h-60" alt="Ecla Logo" />
+                   <img src="/assets/logos/eclaRingLogo.svg" className="h-72" alt="Ecla Logo" />
                 </span>
             </div>
         </div>
