@@ -12,6 +12,7 @@ import axios from "axios"
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux';
 import Chart from "../static/Chart"
+import NFTS from "../static/NFTS"
 const Homepage = () => {
   const dispatch = useDispatch();
   const topCoin = useSelector(state=>state.topCoin);
@@ -37,11 +38,11 @@ const Homepage = () => {
           <button onClick={()=>setConnectPage('wallet')} className={`px-3 font-medium py-3 ${connectPage==='wallet' ? 'active' : null}`}>Wallet</button>
           <button onClick={()=>setConnectPage('balance')} className={`px-3 font-medium py-3 ${connectPage==='balance' ? 'active' : null}`}>Balance</button>
           <button onClick={()=>setConnectPage('transfers')} className={`px-3 font-medium py-3 ${connectPage==='transfers' ? 'active' : null}`}>Transfers</button>
-          <button onClick={()=>setConnectPage('NFTs')} className={`pl-3 pr-5 font-medium py-3 ${connectPage==='NFTs' ? 'active' : null}`}>NFTs</button>
+          <button onClick={()=>setConnectPage('nfts')} className={`pl-3 pr-5 font-medium py-3 ${connectPage==='nfts' ? 'active' : null}`}>NFTs</button>
         </div>
         <div className={` ${connectPage!=='wallet'&&connectPage!=='liquidity'?'inner_bg p-5 md:w-11/12 w-full': 'p-0 w-full'} mx-auto lg:w-10/12  mt-10 flex flex-col justify-between rounded`}>
           <div className="flex lg:flex-row flex-col justify-between rounded">
-            <div className={`lg:w-4/6 w-full md:p-5 ${connectPage==='wallet' || connectPage==='liquidity'||connectPage==='transfers'||connectPage==='balance'? 'hidden' : ''}`}>
+            <div className={`lg:w-4/6 w-full md:p-5 ${connectPage==='wallet' || connectPage==='liquidity'||connectPage==='transfers' ||connectPage==='nfts'||connectPage==='balance'? 'hidden' : ''}`}>
                 <div className="flex flex-col md:flex-row justify-between">
                     <span className="flex justify-between md:flex-row flex-col w-10/12">
                         <span>
@@ -75,7 +76,7 @@ const Homepage = () => {
                 </div>
                 <Chart/>
             </div>
-            {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidity' ? <Liquidity/> : connectPage==='wallet' ? <Wallet/> : connectPage==='transfers' ? <Transfers/> : connectPage==='balance' ? <Transfers/> :<Swap/>}
+            {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidity' ? <Liquidity/> : connectPage==='wallet' ? <Wallet/> : connectPage==='transfers' ? <Transfers/> : connectPage==='balance' ? <Transfers/> : connectPage==='nfts' ? <NFTS/> :<Swap/>}
           </div>
         {connectPage==='limit'&&<Table/>}
         </div>

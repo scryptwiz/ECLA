@@ -478,7 +478,7 @@ const Header = () => {
                     </Transition>
                 </Menu>
                 <li>
-                    <button className="text-white font-semibold text-sm cursor-pointer px-4">Authenticate</button>
+                    <button className="ml-5 text-white font-semibold text-sm cursor-pointer auth_btn px-5 py-1.5 rounded flex justify-center items-center"><img src="/assets/icons/eclaWallet.svg" className="w-8 h-8 mr-3" alt="Wallet Icon"/> Connect Wallet</button>
                 </li>
             </ul>
             <button className="h-screen w-3/12 flex py-10" onClick={menubarOff}>
