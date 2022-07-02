@@ -32,8 +32,8 @@ const Homepage = () => {
         <Header/>
         <div className="inner_bg rounded flex justify-between text-white text-xs mt-16 mx-auto w-full sm:w-fit gap-2 overflow-x-auto">
           <button onClick={()=>setConnectPage('swap')} className={`pl-5 pr-3 font-medium py-3 ${connectPage==='swap'? 'active' : null}`}>Swap</button>
-          <button onClick={()=>setConnectPage('limit')} className={`px-3 font-medium py-3 ${connectPage==='limit'? 'active' : null}`}>Limit</button>
-          <button onClick={()=>setConnectPage('liquidity')} className={`px-3 font-medium py-3 ${connectPage==='liquidity' ? 'active' : null}`}>Liquidity</button>
+          {/* <button onClick={()=>setConnectPage('limit')} className={`px-3 font-medium py-3 ${connectPage==='limit'? 'active' : null}`}>Limit</button> */}
+          {/* <button onClick={()=>setConnectPage('liquidity')} className={`px-3 font-medium py-3 ${connectPage==='liquidity' ? 'active' : null}`}>Liquidity</button> */}
           <button onClick={()=>setConnectPage('wallet')} className={`px-3 font-medium py-3 ${connectPage==='wallet' ? 'active' : null}`}>Wallet</button>
           <button onClick={()=>setConnectPage('balance')} className={`px-3 font-medium py-3 ${connectPage==='balance' ? 'active' : null}`}>Balance</button>
           <button onClick={()=>setConnectPage('transfers')} className={`px-3 font-medium py-3 ${connectPage==='transfers' ? 'active' : null}`}>Transfers</button>
@@ -46,14 +46,14 @@ const Homepage = () => {
                     <span className="flex justify-between md:flex-row flex-col w-10/12">
                         <span>
                             <span className="flex items-center">
-                                <button onClick={()=>qucikPick('bitcoin')}>
-                                  <img src="/assets/ecl.png" className="h-7" alt="ECLA LOGO"/>
+                                <button onClick={()=>qucikPick('matic-network')}>
+                                  <img src="/assets/icons/ecl.svg" className="h-7" alt="ECLA LOGO"/>
                                 </button>
                                 <button onClick={()=>qucikPick('binancecoin')}>
-                                  <img src="/assets/bin.png" className="h-7 ml-2" alt="Binance LOGO"/>
+                                  <img src="/assets/icons/bin.svg" className="h-7 ml-2" alt="Binance LOGO"/>
                                 </button>
-                                <button onClick={()=>qucikPick('matic-network')}>
-                                  <img src="/assets/exchange.png" className="h-7 ml-2" alt="Polygon Logo"/>
+                                <button onClick={()=>qucikPick('ethereum')}>
+                                  <img src="/assets/icons/eth.svg" className="h-7 ml-2" alt="Polygon Logo"/>
                                 </button>
                             </span>
                             {topCoin.coinInfo&&bottomCoin.coinInfo? (<h1 className="font-semibold text-white text-3xl mt-2">1001.203<sub className="text-gray-400 ml-1 text-xs uppercase">{topCoin.coinInfo.symbol}/{bottomCoin.coinInfo.symbol}</sub> </h1>) : ''}
@@ -69,14 +69,11 @@ const Homepage = () => {
                             <p className="text-gray-200 text-xs mt-2 md:text-right text-left">Jun 16, 2022, 10:11PM</p>
                         </div>
                     </span>
-                    <span className="p-4 rounded-lg border-2 border-gray-600 h-fit w-fit mt-3 md:mt-0" id="clip_bg">
-                        <img src="/assets/clipboard.png" className="h-5" alt="Clipboard" />
-                    </span>
+                    <button className="outline-none p-4 rounded-lg border-2 border-gray-600 h-fit w-fit mt-3 md:mt-0" id="clip_bg">
+                        <img src="/assets/clipboard.svg" className="h-5" alt="Clipboard" />
+                    </button>
                 </div>
                 <Chart/>
-                {/* <div id="chart" className="mt-5 bg-purple-300 h-64">
-
-                </div> */}
             </div>
             {connectPage==='swap'? <Swap/>: connectPage==='limit' ? <Limits/>: connectPage==='liquidity' ? <Liquidity/> : connectPage==='wallet' ? <Wallet/> : connectPage==='transfers' ? <Transfers/> : connectPage==='balance' ? <Transfers/> :<Swap/>}
           </div>

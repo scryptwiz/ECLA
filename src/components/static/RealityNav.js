@@ -28,7 +28,7 @@ const RealityNav = () => {
                 </p>
             </li>
         </ul>
-        <button className="lg:hidden block"><img src="/assets/darkMenubar.png" className="h-10" alt="Menubar"/></button>
+        <button className="lg:hidden block"><img src="/assets/icons/darkMenubar.svg" className="h-10" alt="Menubar"/></button>
     </nav>
   )
 }

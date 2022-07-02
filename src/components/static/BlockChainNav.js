@@ -10,24 +10,24 @@ const BlockChainNav = () => {
     }
   return (
     <nav className="flex justify-between items-center">
-        <img src="/assets/eclablockchain.png" alt="ECLA LOGO" />
+        <img src="/assets/logos/eclaBlockchain.svg" className="h-8" alt="ECLA LOGO" />
         <ul className="lg:flex hidden items-center gap-9">
             <li>
                 <p className="text-white flex items-center text-sm tracking-wide font-medium">
                     Developer
-                    <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
+                    <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span>
                 </p>
             </li>
             <li>
                 <p className="text-white flex items-center text-sm tracking-wide font-medium">
                     Ecosystem
-                    <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
+                    <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span>
                 </p>
             </li>
             <li>
                 <p className="text-white flex items-center text-sm tracking-wide font-medium">
                     Learn
-                    <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
+                    <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span>
                 </p>
             </li>
             <button className="text-white px-8 py-1.5 connect_btn">Connect</button>
@@ -37,19 +37,19 @@ const BlockChainNav = () => {
             <li>
                 <Link to='/swap' className="text-white flex items-center text-sm tracking-wide font-medium">
                     Developer
-                    <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
+                    <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span>
                 </Link>
             </li>
             <li>
                 <Link to='/eclablockchain' className="text-white flex items-center text-sm tracking-wide font-medium">
                     Ecosystem
-                    <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
+                    <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span>
                 </Link>
             </li>
             <li>
                 <Link to='/eclamarket' className="text-white flex items-center text-sm tracking-wide font-medium">
                     Learn
-                    <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span>
+                    <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span>
                 </Link>
             </li>
             <li>
@@ -58,11 +58,11 @@ const BlockChainNav = () => {
             </ul>
             <button className="h-screen w-3/12 flex py-10" onClick={menubarOff}>
                 <button onClick={menubarOff} className="absolute right-5">
-                    <img src="/assets/icons/close.png" className="h-10" alt="Menubar"/>
+                    <img src="/assets/icons/close.svg" className="h-10" alt="Menubar"/>
                 </button>
             </button>
         </div> : <button className="lg:hidden block" onClick={menubarOn}>
-          <img src="/assets/icons/menubar.png" className="h-10" alt="Menubar"/>
+          <img src="/assets/icons/menubar.svg" className="h-10" alt="Menubar"/>
         </button>}
     </nav>
   )

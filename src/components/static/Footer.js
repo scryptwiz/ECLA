@@ -6,12 +6,12 @@ const Footer = () => {
         <div className="w-4/5 py-8 flex md:flex-row flex-col justify-between items-center text-white mx-auto">
             <small>@2022. All Right Reserved</small>
             <div className="flex items-center gap-3 mt-3 md:mt-0">
-                <Link to='/'><img src="/assets/icons/telegram.png" className="h-5" alt="Telegram"/></Link>
-                <Link to='/'><img src="/assets/icons/twitter.png" className="h-5" alt="Twitter"/></Link>
-                <Link to='/'><img src="/assets/icons/Vector.png" className="h-5" alt="Dont Know"/></Link>
-                <Link to='/'><img src="/assets/icons/linkedin.png" className="h-5" alt="LinkedIn"/></Link>
-                <Link to='/'><img src="/assets/icons/reddit.png" className="h-5" alt="Reddit"/></Link>
-                <Link to='/'><img src="/assets/icons/discord.png" className="h-5" alt="Discord"/></Link>
+                <Link to='/'><img src="/assets/icons/telegram.svg" className="h-5" alt="Telegram"/></Link>
+                <Link to='/'><img src="/assets/icons/twitter.svg" className="h-5" alt="Twitter"/></Link>
+                <Link to='/'><img src="/assets/icons/Vector.svg" className="h-5" alt="Dont Know"/></Link>
+                <Link to='/'><img src="/assets/icons/linkedin.svg" className="h-5" alt="LinkedIn"/></Link>
+                <Link to='/'><img src="/assets/icons/reddit.svg" className="h-5" alt="Reddit"/></Link>
+                <Link to='/'><img src="/assets/icons/discord.svg" className="h-5" alt="Discord"/></Link>
             </div>
         </div>
     </footer>

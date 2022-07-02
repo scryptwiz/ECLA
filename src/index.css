@@ -20,6 +20,9 @@ code {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.auth_btn { 
+  background-color: #2A4790;
+}
 .connect_btn {
   background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
   border-radius: 97px;

@@ -58,8 +58,8 @@ const Swap = () => {
             <span className="flex justify-between itms-center">
                 <h2 className="text-2xl font-bold text-white">Swap</h2>
                 <span className="flex items-center">
-                    <img src="/assets/settings.png" className="h-5" alt="Settings"/>
-                    <img src="/assets/reload.png" className="h-5 ml-3" alt="Refresh"/>
+                    <img src="/assets/icons/settings.svg" className="h-5" alt="Settings"/>
+                    <img src="/assets/icons/reload.svg" className="h-5 ml-3" alt="Refresh"/>
                 </span>
             </span>
             <hr className="mt-3 border-gray-600"/>
@@ -84,7 +84,7 @@ const Swap = () => {
             <input onChange={exchangeVal} type='number' className="px-4 py-3 rounded-lg border border-gray-600 w-full mt-2.5 outline-none font-medium text-white inp_bg" />
         </div>
         <div className="lg:mt-0 mt-5">
-            <img src="/assets/down.png" className="h-5 mx-auto mt-4" alt="Down Chevron" />
+            {/* <img src="/assets/icons/down.svg" className="h-5 mx-auto mt-4" alt="Down Chevron" /> */}
             <span className="flex items-center mt-4">
                 <div>
                     {!bottomCoin.coinInfo? <Button onClick={handleBottomOpen} variant='text' size='small' sx={styles.select}>Select Token <svg className="w-3.5 h-3.5 ml-2 text-gray-100" fill="currentColor" viewBox="0 0 330 330"><path d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></svg></Button>: <Button onClick={handleBottomOpen} variant='text' size='small' sx={styles.select}><img className='w-8 h-8 rounded-full' src={bottomCoin.coinInfo.image.thumb} alt='Coin Logo'/><span className='ml-5 font-semibold text-sm'>{bottomCoin.coinInfo.symbol}</span><svg className="w-3.5 h-3.5 ml-3 text-gray-100" fill="currentColor" viewBox="0 0 330 330"><path d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></svg></Button> }

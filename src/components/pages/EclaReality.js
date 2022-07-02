@@ -17,7 +17,7 @@ const EclaReality = () => {
         <div className="w-full py-10 h-screen space">
             <div className="w-10/12 flex h-full flex-col justify-between mx-auto">
                 <span className="my-auto text-white">
-                    <h1 className="font-bold sm:text-7xl text-5xl capitalize">Travel.</h1>
+                    <h1 className="font-bold sm:text-7xl text-5xl capitalize">ECLA Verse.</h1>
                     <h1 className="font-bold sm:text-3xl text-xl sm:mt-7 mt-5 w-4/5 xl:w-2/6">Begin a visit to your imagination</h1>
                     <p className="text-sm mt-5 sm:mt-7 font-medium w-4/6 xl:w-2/6">Swap, earn, and build on the leading decentralized crypto trading protocol.</p>
                     <button className="px-10 py-2.5 text-white sm:mt-9 mt-5 connect_btn text-xs sm:text-sm font-semibold">Explore</button>

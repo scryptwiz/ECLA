@@ -10,7 +10,7 @@ const MarketplaceNav = () => {
     }
   return (
     <nav className="flex justify-between">
-        <img src="/assets/logo.png" alt="ECLA LOGO" />
+        <img src="/assets/logos/swapLogo.svg" alt="ECLA LOGO" />
         <ul className="lg:flex hidden items-center gap-9">
             <li>
                 <Link to='/' className="text-white text-sm tracking-wide font-medium underline">Home</Link>
@@ -52,11 +52,11 @@ const MarketplaceNav = () => {
             </ul>
             <button className="h-screen w-3/12 flex py-10" onClick={menubarOff}>
                 <button onClick={menubarOff} className="absolute right-5">
-                    <img src="/assets/icons/close.png" className="h-10" alt="Menubar"/>
+                    <img src="/assets/icons/close.svg" className="h-10" alt="Menubar"/>
                 </button>
             </button>
         </div> : <button className="lg:hidden block" onClick={menubarOn}>
-          <img src="/assets/icons/menubar.png" className="h-10" alt="Menubar"/>
+          <img src="/assets/icons/menubar.svg" className="h-10" alt="Menubar"/>
         </button>}
     </nav>
   )

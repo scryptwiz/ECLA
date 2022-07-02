@@ -22,7 +22,7 @@ const Landingpage = () => {
                     </span>
                 </span>
                 <span className="w-1/2 justify-end items-center md:flex hidden">
-                    <img src="/assets/herologo.png" className="h-72" alt="ECLA Swap"/>
+                    <img src="/assets/herologo.svg" className="h-72" alt="ECLA Swap"/>
                 </span>
             </div>
         </div>
@@ -61,7 +61,7 @@ const Landingpage = () => {
                     </span>
                 </span>
                 <span className="w-1/2 hidden sm:flex justify-end">
-                   <img src="/assets/bbelogo.png" className="h-60" alt="BBE Logo" />
+                   <img src="/assets/bbelogo.svg" className="h-60" alt="BBE Logo" />
                 </span>
             </div>
         </div>
@@ -76,14 +76,14 @@ const Landingpage = () => {
                     </span>
                 </span>
                 <span className="w-1/2 sm:flex hidden justify-end">
-                   <img src="/assets/ecla.png" className="h-60" alt="Ecla Logo" />
+                   <img src="/assets/logos/eclaRingLogo.svg" className="h-60" alt="Ecla Logo" />
                 </span>
             </div>
         </div>
         <div className="mt-20 mb-20 xl:w-9/12 w-11/12 mx-auto py-7 rounded-lg start_bg">
             <div className="xl:w-4/5 w-full px-5 mx-auto flex sm:flex-row flex-col justify-between items-center">
                 <span className="sm:w-1/2 w-11/12 flex">
-                   <img src="/assets/grouplogo.png" className="h-32 sm:h-40 mx-auto" alt="BBE Logo" />
+                   <img src="/assets/logos/groupLogo.svg" className="h-32 sm:h-40 mx-auto" alt="BBE Logo" />
                 </span>
                 <span className="sm:w-1/3 w-11/12 sm:block sm:mt-0 flex justify-center flex-col items-center mt-3">
                     <h1 className="text-3xl trade_title font-medium">Start trading <br/> in seconds</h1>

@@ -1,4 +1,5 @@
 import Helmet from "react-helmet"
+import { Link } from "react-router-dom"
 import BlockChainNav from "../static/BlockChainNav"
 import Footer from "../static/Footer"
 const Eclablockchain = () => {
@@ -14,7 +15,7 @@ const Eclablockchain = () => {
                 <p className="text-xs text-gray-300 mt-4">Decentralized blockchain built to enable scalable, <br/> user-friendly apps for the world.</p>
                 <div className="flex">
                     {/* <span className="blur_bg w-20">h</span> */}
-                    <img src="/assets/eclalogo.png" className="h-64 w-fit mx-auto mt-20" alt="Ecla Logo"/>
+                    <img src="/assets/logos/bigEclaLogo.svg" className="h-64 w-fit mx-auto mt-20" alt="Ecla Logo"/>
                 </div>
                 <h2 className="font-semibold text-white text-2xl mt-10">Blockchain Ecosystem <br/> for Real People</h2>
             </div>
@@ -34,26 +35,27 @@ const Eclablockchain = () => {
             </div>
             <div className="flex justify-center items-center">
                 <span className="circles h-72 flex flex-col justify-center items-center w-80">
-                    <h1 className="text-xl text-center text-white mt-5">Explore to Get <br/> more out of the <br/> ecosystem</h1>
-                    <p className="explore_gradient underline text-sm mt-5">Explore</p>
+                    <h1 className="text-xl xl:text-4xl font-semibold text-center text-white mt-5 trade_title">Explore to Get <br/> more out of the <br/> ecosystem</h1>
+                    <p className="explore_gradient underline mt-5">Explore</p>
                 </span>
             </div>
             <div className="w-full py-20 time_bg">
                 <div className="w-4/5 mx-auto sm:flex-row flex-col  flex justity-between items-center">
                     <span className="sm:w-1/2 w-full">
-                        <h1 className="text-3xl trade_title font-medium">Join a new <br/> world of swift <br/> services</h1>
-                        <p className="mt-3 text-gray-300 text-xs">Lörem ipsum os enunde polyck. Hypolingar <br/> ninera i sur, tidese. Makroder gigasm eung <br/> nynera asejäling, defol. Nelig speskade fast</p>
-                        <p className="text-2xl text-white underline mt-5 trade_title">Learn</p>
+                        <h1 className="text-3xl xl:text-6xl trade_title font-semibold">Join a new <br/> world of swift <br/> services</h1>
+                        <p className="mt-3 text-gray-300 xl:text-base   text-xs">Lörem ipsum os enunde polyck. Hypolingar <br/> ninera i sur, tidese. Makroder gigasm eung <br/> nynera asejäling, defol. Nelig speskade fast</p>
+                        <p className="md:text-2xl xl:text-3xl font-semibold text-white underline mt-5 trade_title">Learn</p>
                     </span>
-                    <span className="sm:w-1/2 w-full flex justify-end">
-                    <img src="/assets/spiral.png" className="h-60" alt="spiral" />
+                    <span className="sm:w-1/2 w-full flex justify-end relative">
+                        <img src="/assets/icons/spiral.svg" className="h-76" alt="spiral" />
+                        <Link to='/' className='text-3xl absolute bottom-20 left-24 text-white underline'>Read <br/> Documentation</Link>
                     </span>
                 </div>
             </div>
             <div className="mt-20 mb-20 lg:w-10/12 xl:w-10/12 mx-auto rounded-lg start_bg">
                 <div className="w-full mx-auto flex md:flex-row flex-col  justify-between items-center md:pr-20">
                     <div className="flex justify-center md:flex-row flex-col items-center">
-                        <img src="/assets/ecla.png" className="h-40" alt="BBE Logo" />
+                        <img src="/assets/logos/eclaRingLogo.svg" className="h-40" alt="BBE Logo" />
                         <img src="/assets/eclacommunity.png" className="sm:h-10 h-8" alt="ECLA Community Logo"/>
                     </div>
                     <button className="lg:py-2.5 lg:px-7 text-sm mt-2 md:mb-0 mb-5 py-2 px-3 border border-white rounded-full text-white font-semibold">Connect Wallet</button>

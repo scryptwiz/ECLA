@@ -5,8 +5,8 @@ const Liquidity = () => {
             <span className="flex justify-between itms-center">
                 <h2 className="text-xl font-bold text-white">Your Liquidity</h2>
                 <span className="flex items-center">
-                    <img src="/assets/settings.png" className="h-5" alt="Settings"/>
-                    <img src="/assets/reload.png" className="h-5 ml-3" alt="Refresh"/>
+                    <img src="/assets/icons/settings.svg" className="h-5" alt="Settings"/>
+                    <img src="/assets/icons/reload.svg" className="h-5 ml-3" alt="Refresh"/>
                 </span>
             </span>
             <p className="text-xs text-gray-300 mt-2">Remove liquidity to receive tokens back</p>

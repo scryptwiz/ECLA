@@ -12,11 +12,11 @@ const Header = () => {
   return (
     <nav className={`flex justify-between`}>
         <div className="flex items-center gap-10">
-            <img src="/assets/logo.png" alt="ECLA LOGO" />
+            <img src="/assets/logos/swapLogo.svg" alt="ECLA LOGO" />
             <ul className="lg:flex hidden items-center gap-3">
                 <Menu as="div" className="text-left">
                     <div>
-                        <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Developer <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                        <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Developer <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
                         <Menu.Items className="origin-top-left absolute left-0 dropdown_content focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
@@ -106,7 +106,7 @@ const Header = () => {
                 </Menu>
                 <Menu as="div" className="text-left">
                     <div>
-                        <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Network <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                        <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Network <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
                         <Menu.Items className="origin-top-left absolute left-0 dropdown_content focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
@@ -166,7 +166,7 @@ const Header = () => {
                 </li>
                 <Menu as="div" className="text-left">
                     <div>
-                        <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                        <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
                         <Menu.Items className="origin-top-left absolute left-0 dropdown_content focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
@@ -242,17 +242,16 @@ const Header = () => {
                         </Menu.Items>
                     </Transition>
                 </Menu>
-                {/* <Link to='/eclaecosystem' className="text-white px-8 py-1.5 connect_btn">Connect</Link> */}
             </ul>
         </div>
         <div className="flex justify-center items-center lg:flex hidden">
-            <button className="text-white font-semibold text-sm cursor-pointer">Authenticate</button>
+            <button className="text-white font-semibold text-sm cursor-pointer auth_btn px-5 py-1.5 rounded flex justify-center items-center"><img src="/assets/icons/eclaWallet.svg" className="w-8 h-8 mr-3" alt="Wallet Icon"/> Connect Wallet</button>
         </div>
         {toggle?<div className="w-full h-screen fixed top-0 left-0 flex lg:hidden">
             <ul className="h-screen w-9/12 py-20 bg-gray-900 bg-opacity-90 flex flex-col gap-9 overflow-y-auto">
                 <Menu as="div" className="text-left">
                     <div>
-                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Developer <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Developer <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
                         <Menu.Items className="w-full focus:outline-none flex justify-between py-5 flex-wrap px-5 z-40">
@@ -342,7 +341,7 @@ const Header = () => {
                 </Menu>
                 <Menu as="div" className="text-left">
                     <div>
-                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Network <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Network <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
                         <Menu.Items className="w-full focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
@@ -402,7 +401,7 @@ const Header = () => {
                 </li>
                 <Menu as="div" className="text-left">
                     <div>
-                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/downchevron.png" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
                         <Menu.Items className="w-ful focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
@@ -484,11 +483,11 @@ const Header = () => {
             </ul>
             <button className="h-screen w-3/12 flex py-10" onClick={menubarOff}>
                 <button onClick={menubarOff} className="absolute right-5">
-                    <img src="/assets/icons/close.png" className="h-10" alt="Menubar"/>
+                    <img src="/assets/icons/close.svg" className="h-10" alt="Menubar"/>
                 </button>
             </button>
         </div> : <button className="lg:hidden block" onClick={menubarOn}>
-          <img src="/assets/icons/menubar.png" className="h-10" alt="Menubar"/>
+          <img src="/assets/icons/menubar.svg" className="h-10" alt="Menubar"/>
         </button>}
     </nav>
   )
