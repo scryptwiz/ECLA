@@ -163,9 +163,11 @@ code {
   background-repeat: no-repeat!important; 
   background-size: 170vh !important;
   background-position: left;
-  background: linear-gradient(rgba(23, 24, 64,0.7), rgba(23, 24, 64,0.7)),url('/public/assets/backgoundImages/spiral_bg.svg');
+  /* linear-gradient(rgba(23, 24, 64,0.9), rgba(23, 24, 64,0.9)) */
+  background: url('/public/assets/backgoundImages/spiral_bg.svg');
   background-color: #171840;
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 60% 100%, 50% 100%, 0 90%);
+  background-blend-mode: overlay;
+  /* clip-path: polygon(0 0, 100% 0, 100% 92%, 60% 100%, 50% 100%, 0 90%); */
 }
 .whitepaper_btn {
   color: #0C66F1;
@@ -183,8 +185,8 @@ code {
   background: linear-gradient(295.85deg, #0C66F1 10.34%, #3FACFC 93.54%);
 }
 .cryto_logo {
-  top: -70px;
-  left: 20px;
+  top: -90px;
+  /* left: 0px; */
 }
 .active_eco {
   background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);

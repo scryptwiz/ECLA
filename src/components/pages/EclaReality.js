@@ -41,8 +41,8 @@ const EclaReality = () => {
         </div>
         <div className="w-full py-10 reality_footer_bg">
             <div className="w-10/12 flex h-full justify-between flex-col mx-auto">
-                {/* <img src="/assets/Eclareality.png" alt="Ecla Reality"/> */}
-                <span className="my-10">
+                <img src="/assets/logos/eclaReality.svg" className="mx-auto mt-20" alt="Ecla Reality"/>
+                <span className="mb-10">
                     <span className="flex gap-10 text-white underline">
                         <Link to='/' className="active">Explore</Link>
                         <Link to='/'>Create</Link>
@@ -104,10 +104,10 @@ const EclaReality = () => {
                 </span>
                 <span className="my-auto text-white flex justify-between items-center w-full">
                 `    <div className="mt-20 mb-20 w-full mx-auto rounded-lg start_bg">
-                        <div className="w-full mx-auto flex md:flex-row flex-col justify-between items-center md:pr-6">
+                        <div className="w-full mx-auto flex md:flex-row flex-col px-6 justify-between items-center md:pr-6">
                             <div className="flex justify-center md:flex-row flex-col items-center">
                                 <img src="/assets/logos/eclaRingLogo.svg" className="h-40" alt="BBE Logo" />
-                                <img src="/assets/eclacommunity.png" className="sm:h-7 lg:h-10 h-8" alt="ECLA Community Logo"/>
+                                <img src="/assets/logos/eclacommunity.svg" className="sm:h-7 lg:h-10 h-8" alt="ECLA Community Logo"/>
                             </div>
                             <button className="lg:py-2.5 lg:px-7 text-sm mt-2 md:mb-0 mb-5 py-2 px-3 border border-gray-600 text-gray-600 rounded-full font-semibold">Become a member</button>
                         </div>

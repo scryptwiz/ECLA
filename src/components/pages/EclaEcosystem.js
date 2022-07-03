@@ -18,8 +18,8 @@ const EclaEcosystem = () => {
                   <span className="flex md:gap-10 gap-5 mt-10 mx-auto flex-wrap items-center justify-center">
                     <button className="text-sm text-white connect_btn px-8 py-2">Roadmap</button>
                     <button className="text-sm px-8 py-2 bg-white whitepaper_btn">Road Whitepaper</button>
-                    <img src="/assets/EcosysImages/eclaLogo3.png" className="h-24 md:h-32 absolute md:left-20 xl:left-52 left-5 bottom-0 ecla_logo_3" alt="Ecla Logo"/>
-                    <img src="/assets/EcosysImages/eclipse.png" className="h-32 absolute md:right-20 right-0 bottom-0 md:bottom-1" alt="Eclipse"/>
+                    <img src="/assets/EcosysImages/eclaLogo3.png" className="h-24 md:h-32 absolute md:left-20 xl:left-52 left-5 z-0 bottom-2" alt="Ecla Logo"/>
+                    <img src="/assets/EcosysImages/eclipse.png" className="h-32 absolute md:right-20 right-0 bottom-0" alt="Eclipse"/>
                   </span>
                 </div>
               </div>
@@ -109,11 +109,11 @@ const EclaEcosystem = () => {
           </div>
           <div className="relative">
             <div className="h-10"></div>
-            <div className="flex md:flex-row flex-col md:w-7/12 w-10/12 mx-auto rounded-xl items-center relative main_crypto_cont">
-              <div className="sm:h-32 md:h-52 h-28 md:w-2/6 w-5/6 relative">
-                <img src="/assets/EcosysImages/ECLACoin.png" className="h-56 absolute cryto_logo" alt="Crypto Logo"/>
+            <div className="flex md:flex-row flex-col xl:w-7/12 md:w-9/12 w-10/12 mx-auto rounded-xl items-center relative main_crypto_cont">
+              <div className="sm:h-32 md:h-52 h-28 md:w-3/6 xl:w-2/6 w-5/6 relative">
+                <img src="/assets/EcosysImages/ECLACoin.png" className="h-56 absolute md:left-5 cryto_logo" alt="Crypto Logo"/>
               </div>
-              <span className="md:ml-10 md:w-4/6 w-5/6 text-white py-7 md:py-0">
+              <span className="md:ml-10 md:w-4/6 xl w-5/6 text-white py-7 md:py-0">
                 <h4 className="text-xl font-semibold">The ECLA Token (ECLA)</h4>
                 <p className="text-xs mt-2 sm:w-4/5 w-full">It is an all-in-one interface to access the ECLA token economy. We are continuing to upgrade the ECLAWallet in order to support increasing composability and the seamless transfer of value across chains.</p>
                 <Link to='/' className="underline text-xs mt-3">Read more</Link>

@@ -100,13 +100,13 @@ const RealityNav = () => {
             </Menu>
         </ul>
         {toggle?<div className="w-full h-screen fixed top-0 left-0 flex lg:hidden">
-            <ul className="h-screen w-9/12 py-20 bg-gray-900 bg-opacity-90 flex flex-col gap-9 overflow-y-auto">
+            <ul className="h-screen w-9/12 py-20 bg-gray-900 bg-opacity-90 flex flex-col gap-4 overflow-y-auto">
                 <Menu as="div" className="text-left">
                     <div>
                         <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Developer <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
-                        <Menu.Items className="w-full focus:outline-none flex justify-between py-5 flex-wrap px-5 z-40">
+                        <Menu.Items className="w-full focus:outline-none flex justify-between flex-wrap px-5 z-40">
                             <div className="py-1 w-full">
                                 <Menu.Item>
                                 <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Build on ECLA</Link>
@@ -126,7 +126,7 @@ const RealityNav = () => {
                         <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Ecosystem <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
-                        <Menu.Items className="w-full focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
+                        <Menu.Items className="w-full focus:outline-none flex justify-between flex-wrap px-5 z-40">
                             <div className="py-1 w-full">
                             <Menu.Item>
                                 <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
@@ -158,16 +158,13 @@ const RealityNav = () => {
                         <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Learn <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
-                        <Menu.Items className="w-ful focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
+                        <Menu.Items className="w-ful focus:outline-none flex justify-between flex-wrap px-5 z-40">
                             <div className="py-1 w-full">
                                 <Menu.Item>
                                     <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Branding</Link>
                                 </Menu.Item>
                                 <Menu.Item>
-                                    <h4 className='text-gray-400 block text-lg font-semibold pt-5 pb-2 text-sm capitalize'>Collective</h4>
-                                </Menu.Item>
-                                <Menu.Item>
-                                    <Link to='' className='text-gray-300 block text-sm mt-5 font-medium'>Join the collective</Link>
+                                    <Link to='' className='text-gray-300 block text-sm font-medium'>Join the collective</Link>
                                 </Menu.Item>
                             </div>
                         </Menu.Items>
