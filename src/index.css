@@ -161,13 +161,10 @@ code {
 }
 .ecosys_hero{
   background-repeat: no-repeat!important; 
-  background-size: 170vh !important;
   background-position: left;
-  /* linear-gradient(rgba(23, 24, 64,0.9), rgba(23, 24, 64,0.9)) */
-  background: url('/public/assets/backgoundImages/spiral_bg.svg');
-  background-color: #171840;
+  background-size: cover;
+  background: linear-gradient(rgb(23, 24, 64), rgb(23, 24, 64)), url('/public/assets/backgoundImages/spiral_bg.svg');
   background-blend-mode: overlay;
-  /* clip-path: polygon(0 0, 100% 0, 100% 92%, 60% 100%, 50% 100%, 0 90%); */
 }
 .whitepaper_btn {
   color: #0C66F1;

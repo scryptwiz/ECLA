@@ -15,10 +15,10 @@ const EclaEcosystem = () => {
                 <EcosystemNav/>
                 <div className="h-4/6 w-full flex flex-col">
                   <h1 className="sm:text-5xl md:text-5xl md:w-3/5 w-full text-4xl font-bold text-white mx-auto text-center">Blockchain Ecosystem for Real People</h1>
-                  <span className="flex md:gap-10 gap-5 mt-10 mx-auto flex-wrap items-center justify-center">
+                  <span className="flex md:gap-10 gap-5 mt-7 md:mt-10 mx-auto flex-wrap items-center justify-center">
                     <button className="text-sm text-white connect_btn px-8 py-2">Roadmap</button>
                     <button className="text-sm px-8 py-2 bg-white whitepaper_btn">Road Whitepaper</button>
-                    <img src="/assets/EcosysImages/eclaLogo3.png" className="h-24 md:h-32 absolute md:left-20 xl:left-52 left-5 z-0 bottom-2" alt="Ecla Logo"/>
+                    <img src="/assets/EcosysImages/eclaLogo3.png" className="h-24 md:h-32 absolute md:left-20 xl:left-52 left-5 z-0 md:bottom-2 bottom-1" alt="Ecla Logo"/>
                     <img src="/assets/EcosysImages/eclipse.png" className="h-32 absolute md:right-20 right-0 bottom-0" alt="Eclipse"/>
                   </span>
                 </div>
@@ -75,34 +75,36 @@ const EclaEcosystem = () => {
               <hr className="border-gray-400 mt-10"/>
               <div className="w-full flex items-center justify-between mt-10 md:flex-row flex-col">
                 <span className="md:w-6/12 w-full">
-                    <h1 className="text-xl font-semibold ecosysTitles">SUNTWIST - Agro-based crypto investment platform</h1>
+                    <h1 className="text-xl font-semibold ecosysTitles">ECLA Wallet</h1>
                     <p className="text-xs text-gray-700 mt-5">A desire to eat healthy combined with the widespread adoption of technology across all domains has resulted in agribusinesses searching for supply chain management software to improve food safety, food quality, and the traceability of the entire farming supply chain.</p>
-                    <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
+                    <Link to='/swap'>
+                      <button className="connect_btn px-8 py-2 mt-7 text-white">Swap</button>
+                    </Link>
                 </span>
                 <span className="md:w-4/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/EcosysImages/smallleaves.png" className="md:h-full h-32 mx-auto" alt="SmallLeaves"/>
+                    <img src="/assets/icons/eclaWallet.svg" className="md:h-full h-32 mx-auto" alt="SmallLeaves"/>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>
               <div className="w-full flex items-center justify-between mt-10 md:flex-row flex-col">
                 <span className="md:w-6/12 w-full">
-                    <h1 className="text-xl font-semibold ecosysTitles">Prime Edifice Real Estate</h1>
+                    <h1 className="text-xl font-semibold ecosysTitles">ECLA Bridge</h1>
                     <p className="text-xs text-gray-700 mt-5">According to the Reportlinker, the US real estate commercial real market is worth over $4.5 trillion, an indication that the industry is well thronged by investors globally. Understandably, the demand for housing both, residential and commercial will continue to rise.</p>
                     <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
                 </span>
                 <span className="md:w-5/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/EcosysImages/buildings.png" className="md:h-full h-32 mx-auto" alt="Connections"/>
+                    <img src="/assets/icons/eclaBridge.svg" className="md:h-full h-32 mx-auto" alt="Connections"/>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>
               <div className="w-full flex items-center justify-between mt-10 md:flex-row flex-col">
                 <span className="md:w-6/12 w-full">
-                    <h1 className="text-xl font-semibold ecosysTitles">Green Mall - E-commerce Platform</h1>
+                    <h1 className="text-xl font-semibold ecosysTitles">ECLA Stacking</h1>
                     <p className="text-xs text-gray-700 mt-5">The E-commerce industry is controlled by big players like Amazon, eBay, Shopify. Despite the size of the industry, and the volume of transactions done daily, certain challenges have limited its further growth. One of them is high transactions for goods purchased by consumers.</p>
                     <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
                 </span>
                 <span className="md:w-4/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/glogo.png" className="md:h-full h-32 mx-auto" alt="Connections"/>
+                    <img src="/assets/icons/eclaStack.svg" className="md:h-full h-32 mx-auto" alt="Connections"/>
                 </span>
               </div>
             </span>
