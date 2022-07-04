@@ -12,6 +12,8 @@ const Footer = () => {
                 <a href=' https://www.linkedin.com/in/ecla-ecosystem-8b5959235/'><img src="/assets/icons/linkedin.svg" className="h-5" alt="LinkedIn"/></a>
                 <a href='https://reddit.com/r/eclaecosystem'><img src="/assets/icons/reddit.svg" className="h-5" alt="Reddit"/></a>
                 <a href='https://discord.gg/4YfWcEwkeG'><img src="/assets/icons/discord.svg" className="h-5" alt="Discord"/></a>
+                <a href='https://Facebook.com/eclaecosystem'><img src="/assets/icons/facebook.svg" className="h-5" alt="Facebook"/></a>
+                <a href='https://Instagram.com/eclaecosystem'><img src="/assets/icons/instagram.svg" className="h-5" alt="Instagram"/></a>
             </div>
         </div>
     </footer>

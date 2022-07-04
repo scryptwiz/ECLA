@@ -34,7 +34,10 @@ const Swap = () => {
     const [bottomOpen, setBottomOpen] = useState(false);
     const [exchangeValue, setExchangeValue] = useState('');
     const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const handleClose = () => {
+        setOpen(false);
+        setSearch('');
+    }
     const handleBottomOpen = () => setBottomOpen(true);
     const handleBottomClose = () => setBottomOpen(false);
     const topToken = (tokenInfo) => {
@@ -52,6 +55,7 @@ const Swap = () => {
     const exchangeVal = event => {
         setExchangeValue(event.target.value)
     }
+    const [search, setSearch] = useState('')
   return (
     <div className="lg:w-2/6 md:w-11/12 w-full mx-auto border-2 border-gray-600 rounded-xl flex flex-col justify-between lg:p-5 md:p-7 p-5 md:mt-0 mt-5" id="swap_bg">
         <div>
@@ -71,8 +75,14 @@ const Swap = () => {
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description" sx={styles.modal} >
                         <Box sx={styles.style}>
                         <Typography id="modal-modal-title" variant="h6" component="h2">Select A Token</Typography>
-                        <input type='search' className='border-gray-400 border rounded px-3 py-1.5 w-full mt-3' placeholder='Search'/>
-                        {allCoins.map((items)=>{
+                        <input type='search' onChange={(e)=>setSearch(e.target.value)} className='border-gray-400 border rounded px-3 py-1.5 w-full mt-3' placeholder='Search'/>
+                        {allCoins.filter((items)=>{
+                            if (search==='') {
+                                return items;
+                            } else if (items.name.toLowerCase().includes(search.toLowerCase())) {
+                                return items;
+                            }
+                        }).map((items)=>{
                             return (
                                 <Typography key={items.id} id="modal-modal-description" sx={{ mt: 2 }}><Button onClick={()=>topToken(items)} variant='text' size='small'><img className='w-10 h-10 rounded-full' src={items.image} alt='Coin Logo'/><span className='ml-2 flex flex-col gap-2 items-start'><p>{items.name}</p><p className='font-semibold'>{items.symbol}</p></span></Button></Typography>
                             )
@@ -91,8 +101,14 @@ const Swap = () => {
                     <Modal open={bottomOpen} onClose={handleBottomClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description" sx={styles.modal} >
                         <Box sx={styles.style}>
                         <Typography id="modal-modal-title" variant="h6" component="h2">Select A Token</Typography>
-                        <input type='search' className='border-gray-400 border rounded px-3 py-1.5 w-full mt-3' placeholder='Search'/>
-                        {allCoins.map((items)=>{
+                        <input type='search' onChange={(e)=>setSearch(e.target.value)} className='border-gray-400 border rounded px-3 py-1.5 w-full mt-3' placeholder='Search'/>
+                        {allCoins.filter((items)=>{
+                            if (search==='') {
+                                return items;
+                            } else if (items.name.toLowerCase().includes(search.toLowerCase())) {
+                                return items;
+                            }
+                        }).map((items)=>{
                             return (
                                 <Typography key={items.id} id="modal-modal-description" sx={{ mt: 2 }}><Button onClick={()=>bottomToken(items)} variant='text' size='small'><img className='w-10 h-10 rounded-full' src={items.image} alt='Coin Logo'/><span className='ml-2 flex flex-col gap-2 items-start'><p>{items.name}</p><p className='font-semibold'>{items.symbol}</p></span></Button></Typography>
                             )

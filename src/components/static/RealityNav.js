@@ -23,16 +23,16 @@ const RealityNav = () => {
                     <Menu.Button className="inline-flex justify-center items-center w-full rounded-md px-4 py-2 text-sm font-medium text-gray-700">Developer <span><img src="/assets/icons/darkdownchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                 </div>
                 <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
-                    <Menu.Items className="origin-top-left absolute focus:outline-none ecosys_dropdown flex justify-between py-5 flex-wrap mt-2 px-5 z-40">
+                    <Menu.Items className="origin-top-left absolute focus:outline-none bg-gray-300 py-2 mt-2 flex justify-between flex-wrap px-5 z-40">
                         <div className="py-1">
                             <Menu.Item>
-                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Build on ECLA</Link>
+                                <Link to='' className='text-gray-900 block py-2 text-sm font-medium'>Build on ECLA</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Documentation</Link>
+                                <Link to='' className='text-gray-900 block py-2 text-sm font-medium'>Documentation</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Our SDK</Link>
+                                <Link to='' className='text-gray-900 block py-2 text-sm font-medium'>Our SDK</Link>
                             </Menu.Item>
                         </div>
                     </Menu.Items>
@@ -44,22 +44,22 @@ const RealityNav = () => {
                     <Menu.Button className="inline-flex justify-center items-center w-full rounded-md px-4 py-2 text-sm font-medium text-gray-700">Ecosystem <span><img src="/assets/icons/darkdownchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                 </div>
                 <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
-                    <Menu.Items className="origin-top-left absolute focus:outline-none flex ecosys_dropdown justify-between py-5 mt-2 flex-wrap px-5 z-40">
+                    <Menu.Items className="origin-top-left absolute focus:outline-none flex bg-gray-300 py-2 mt-2 justify-between flex-wrap px-5 z-40">
                         <div className="py-1">
                             <Menu.Item>
-                                <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
+                                <Link to='/swap' className='text-gray-900 block py-2 text-sm font-medium'>ECLA Swap</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='/eclamarket' className='text-gray-300 block py-2 text-sm font-medium'>Market Place</Link>
+                                <Link to='/eclamarket' className='text-gray-900 block py-2 text-sm font-medium'>Market Place</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='/eclareality' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Reality</Link>
+                                <Link to='/eclareality' className='text-gray-900 block py-2 text-sm font-medium'>ECLA Reality</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Bridge</Link>
+                                <Link to='' className='text-gray-900 block py-2 text-sm font-medium'>ECLA Bridge</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Stake</Link>
+                                <Link to='' className='text-gray-900 block py-2 text-sm font-medium'>Stake</Link>
                             </Menu.Item>
                         </div>
                     </Menu.Items>
@@ -77,22 +77,22 @@ const RealityNav = () => {
                     <Menu.Button className="inline-flex justify-center items-center w-full rounded-md px-4 py-2 text-sm font-medium text-gray-700">Learn <span><img src="/assets/icons/darkdownchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                 </div>
                 <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
-                    <Menu.Items className="origin-top-left absolute focus:outline-none flex ecosys_dropdown justify-between py-5 mt-2 flex-wrap px-5 z-40">
+                    <Menu.Items className="origin-top-left absolute focus:outline-none flex justify-between bg-gray-300 py-2 mt-2 flex-wrap px-5 z-40">
                         <div className="py-1">
                             <Menu.Item>
-                                <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
+                                <Link to='/swap' className='text-gray-900 block py-2 text-sm font-medium'>ECLA Swap</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='/eclamarket' className='text-gray-300 block py-2 text-sm font-medium'>Market Place</Link>
+                                <Link to='/eclamarket' className='text-gray-900 block py-2 text-sm font-medium'>Market Place</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='/eclareality' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Reality</Link>
+                                <Link to='/eclareality' className='text-gray-900 block py-2 text-sm font-medium'>ECLA Reality</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Bridge</Link>
+                                <Link to='' className='text-gray-900 block py-2 text-sm font-medium'>ECLA Bridge</Link>
                             </Menu.Item>
                             <Menu.Item>
-                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Stake</Link>
+                                <Link to='' className='text-gray-900 block py-2 text-sm font-medium'>Stake</Link>
                             </Menu.Item>
                         </div>
                     </Menu.Items>

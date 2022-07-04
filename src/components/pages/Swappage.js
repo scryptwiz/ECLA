@@ -25,6 +25,11 @@ const Homepage = () => {
       dispatch({type:"SET_TOP_COIN", payload:{coinInfo:res.data}});
     })
   }
+  const times = '';
+  const date = '';
+  // const current = new Date();
+  // const date = `${current.toLocaleString('en-us', { month: 'short' })} ${current.getDate()}, ${current.getFullYear()}`;
+  // const times = current.getHours() + ':' + current.getMinutes();
   return (
     <div className="spiral_bg overflow-x-hidden">
       <div className={`main_bg w-11/12 mx-auto pt-10 ${connectPage==='transfers'|| connectPage==='liquidity' || connectPage==='balance'?'h-screen overflow-y-auto' : ''}`}>
@@ -45,7 +50,7 @@ const Homepage = () => {
           <div className="flex lg:flex-row flex-col justify-between rounded">
             <div className={`lg:w-4/6 w-full md:p-5 ${connectPage==='wallet' || connectPage==='liquidity'||connectPage==='transfers' ||connectPage==='nfts'||connectPage==='balance'? 'hidden' : ''}`}>
                 <div className="flex flex-col md:flex-row justify-between">
-                    <span className="flex justify-between md:flex-row flex-col w-10/12">
+                    <span className="flex justify-between md:flex-row flex-col w-full">
                         <span>
                             <span className="flex items-center">
                                 <button onClick={()=>qucikPick('ethereum')}>
@@ -55,7 +60,7 @@ const Homepage = () => {
                                   <img src="/assets/icons/bin.svg" className="h-7 ml-2" alt="Binance LOGO"/>
                                 </button>
                                 <button onClick={()=>qucikPick('matic-network')}>
-                                  <img src="/assets/icons/ecl.svg" className="h-7 ml-2" alt="ECLA LOGO"/>
+                                  <img src="/assets/icons/polygon.svg" className="h-5 ml-2" alt="ECLA LOGO"/>
                                 </button>
                             </span>
                             {topCoin.coinInfo&&bottomCoin.coinInfo? (<h1 className="font-semibold text-white text-3xl mt-2">1001.203<sub className="text-gray-400 ml-1 text-xs uppercase">{topCoin.coinInfo.symbol}/{bottomCoin.coinInfo.symbol}</sub> </h1>) : ''}
@@ -68,12 +73,9 @@ const Homepage = () => {
                                 <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time===30&&"active_time"}`} onClick={()=>dispatch({type:"SET_FETCH_TIME", payload:{time:30}})}>1M</button>
                                 <button className={`rounded py-2.5 px-3.5 text-xs font-semibold ${time===365&&"active_time"}`} onClick={()=>dispatch({type:"SET_FETCH_TIME", payload:{time:365}})}>1Y</button>
                             </span>
-                            <p className="text-gray-200 text-xs mt-2 md:text-right text-left">Jun 16, 2022, 10:11PM</p>
+                            <p className="text-gray-200 text-xs mt-2 md:text-right text-left">{date}, {times}</p>
                         </div>
                     </span>
-                    {/* <button className="outline-none p-4 rounded-lg border-2 border-gray-600 h-fit w-fit mt-3 md:mt-0" id="clip_bg">
-                        <img src="/assets/clipboard.svg" className="h-5" alt="Clipboard" />
-                    </button> */}
                 </div>
                 <Chart/>
             </div>
