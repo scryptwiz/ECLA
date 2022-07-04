@@ -82,7 +82,7 @@ const EclaEcosystem = () => {
                     </Link>
                 </span>
                 <span className="md:w-4/12 w-full md:mt-0 mt-5">
-                    <img src="/assets/icons/eclaWallet.svg" className="md:h-full h-32 mx-auto" alt="SmallLeaves"/>
+                    <img src="/assets/icons/eclaWallet.png" className="md:h-full h-32 mx-auto" alt="SmallLeaves"/>
                 </span>
               </div>
               <hr className="border-gray-400 mt-10"/>

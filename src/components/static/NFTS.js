@@ -82,7 +82,7 @@ const NFTS = () => {
             </div>
           </div>
           <div className="w-full flex">
-            <Link to='/' className="text-gray-300 underline font-semibold text-center tracking-wider text-sm mx-auto">View More</Link>
+            <Link to='/eclamarket' className="text-gray-300 underline font-semibold text-center tracking-wider text-sm mx-auto">View More</Link>
           </div>
         </div>
       </div>

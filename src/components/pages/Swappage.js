@@ -25,11 +25,9 @@ const Homepage = () => {
       dispatch({type:"SET_TOP_COIN", payload:{coinInfo:res.data}});
     })
   }
-  const times = '';
-  const date = '';
-  // const current = new Date();
-  // const date = `${current.toLocaleString('en-us', { month: 'short' })} ${current.getDate()}, ${current.getFullYear()}`;
-  // const times = current.getHours() + ':' + current.getMinutes();
+  const current = new Date();
+  const date = `${current.toLocaleString('en-us', { month: 'short' })} ${current.getDate()}, ${current.getFullYear()}`;
+  const times = current.getHours() + ':' + current.getMinutes();
   return (
     <div className="spiral_bg overflow-x-hidden">
       <div className={`main_bg w-11/12 mx-auto pt-10 ${connectPage==='transfers'|| connectPage==='liquidity' || connectPage==='balance'?'h-screen overflow-y-auto' : ''}`}>

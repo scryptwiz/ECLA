@@ -15,7 +15,7 @@ const Eclablockchain = () => {
                 <p className="text-xs text-gray-300 mt-4">Decentralized blockchain built to enable scalable, <br/> user-friendly apps for the world.</p>
                 <div className="flex">
                     {/* <span className="blur_bg w-20">h</span> */}
-                    <img src="/assets/logos/bigEclaLogo.svg" className="h-64 w-fit mx-auto mt-20" alt="Ecla Logo"/>
+                    <img src="/assets/logos/bigEclaLogo.png" className="h-64 w-fit mx-auto mt-20" alt="Ecla Logo"/>
                 </div>
                 <h2 className="font-semibold text-white text-2xl mt-10">Blockchain Ecosystem <br/> for Real People</h2>
             </div>
@@ -56,7 +56,7 @@ const Eclablockchain = () => {
                 <div className="w-full mx-auto flex md:flex-row flex-col  justify-between items-center md:pr-20">
                     <div className="flex justify-center md:flex-row flex-col items-center">
                         <img src="/assets/logos/eclaRingLogo.svg" className="h-40" alt="BBE Logo" />
-                        <img src="/assets/eclacommunity.png" className="sm:h-10 h-8" alt="ECLA Community Logo"/>
+                        <img src="/assets/logos/eclacommunity.svg" className="sm:h-10 h-8" alt="ECLA Community Logo"/>
                     </div>
                     <button className="lg:py-2.5 lg:px-7 text-sm mt-2 md:mb-0 mb-5 py-2 px-3 border border-white rounded-full text-white font-semibold">Connect Wallet</button>
                 </div>

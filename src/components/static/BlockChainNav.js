@@ -47,6 +47,9 @@ const BlockChainNav = () => {
                     <Menu.Items className="origin-top-left absolute focus:outline-none flex ecosys_dropdown justify-between mt-2 flex-wrap px-5 z-40">
                         <div className="py-1">
                             <Menu.Item>
+                                <Link to='/eclaecosystem' className='text-gray-300 block py-2 text-sm font-medium'>Getting Started</Link>
+                            </Menu.Item>
+                            <Menu.Item>
                                 <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
                             </Menu.Item>
                             <Menu.Item>
@@ -67,10 +70,83 @@ const BlockChainNav = () => {
             </Menu>
             {/* Community */}
             <Menu as="div" className="text-left">
-                <div>
-                    <Link to='' className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community</Link>
-                </div>
-            </Menu>
+                    <div>
+                        <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                    </div>
+                    <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
+                        <Menu.Items className="origin-top-left absolute left-0 dropdown_content focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
+                            <div className="py-1 w-1/4">
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 block text-lg font-semibold py-2 text-sm capitalize'>Community</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Home</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Events</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Breakpoint</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Branding</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 block text-lg font-semibold pt-8 pb-2 text-sm capitalize'>Collective</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block text-sm font-medium'>Join the collective</Link>
+                                </Menu.Item>
+                            </div>
+                            <div className="py-1 w-1/4">
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 block text-lg font-semibold py-2 text-sm capitalize'>Content</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>News</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Prodcast</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Youtube</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Newsletter</Link>
+                                </Menu.Item>
+                            </div>
+                            <div className="py-1 w-1/4">
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 flex gap-2 text-lg font-semibold py-2 text-sm capitalize'>Socials</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://twitter.com/EclaEcosystem' className='text-gray-300 flex gap-2 py-2 text-sm font-medium'> <img src="/assets/icons/twitter.svg" className="h-5" alt="Twitter"/>Twitter</a>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://discord.gg/4YfWcEwkeG' className='text-gray-300 flex gap-2 py-2 text-sm font-medium'><img src="/assets/icons/discord.svg" className="h-5" alt="Discord"/>Discord</a>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://reddit.com/r/eclaecosystem' className='text-gray-300 flex gap-2 py-2 text-sm font-medium'> <img src="/assets/icons/reddit.svg" className="h-5" alt="Reddit"/>Reddit</a>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://t.me/eclaecosystem' className='text-gray-300 flex gap-2 py-2 text-sm font-medium'> <img src="/assets/icons/telegram.svg" className="h-5" alt="Telegram"/>Telegram</a>
+                                </Menu.Item>
+                            </div>
+                        </Menu.Items>
+                    </Transition>
+                </Menu>
             {/* Learn */}
             <Menu as="div" className="text-left">
                 <div>
@@ -148,9 +224,84 @@ const BlockChainNav = () => {
                         </Menu.Items>
                     </Transition>
                 </Menu>
-                <li>
-                    <Link to='#community' className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community</Link>
-                </li>
+                <Menu as="div" className="text-left">
+                    <div>
+                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                    </div>
+                    <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
+                        <Menu.Items className="w-ful focus:outline-none flex justify-between py-5 flex-wrap px-5 mt-2 z-40">
+                            <div className="py-1 w-full">
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 block text-lg font-semibold py-2 text-sm capitalize'>Community</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Home</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Events</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Breakpoint</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Branding</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 block text-lg font-semibold pt-8 pb-2 text-sm capitalize'>Collective</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block text-sm font-medium'>Join the collective</Link>
+                                </Menu.Item>
+                            </div>
+                            <div className="py-1 w-full">
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 block text-lg font-semibold py-2 text-sm capitalize'>Content</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>News</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Prodcast</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Youtube</Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Newsletter</Link>
+                                </Menu.Item>
+                            </div>
+                            <div className="py-1 w-full">
+                                <Menu.Item>
+                                    <h4 className='text-gray-400 block text-lg font-semibold py-2 text-sm capitalize'>Socials</h4>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <hr className="border-gray-400 py-3"/>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://twitter.com/EclaEcosystem' className='text-gray-300 flex items-center py-2 text-sm font-medium'><img src="/assets/icons/twitter.svg" className="h-5 mr-2" alt="Twitter"/>Twitter</a>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://discord.gg/4YfWcEwkeG' className='text-gray-300 flex items-center py-2 text-sm font-medium'><img src="/assets/icons/discord.svg" className="h-5 mr-2" alt="Discord"/>Discord</a>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://reddit.com/r/eclaecosystem' className='text-gray-300 flex items-center py-2 text-sm font-medium'><img src="/assets/icons/reddit.svg" className="h-5 mr-2" alt="Reddit"/>Reddit</a>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <a href='https://t.me/eclaecosystem' className='text-gray-300 flex items-center py-2 text-sm font-medium'><img src="/assets/icons/telegram.svg" className="h-5 mr-2" alt="Telegram"/>Telegram</a>
+                                </Menu.Item>
+                            </div>
+                        </Menu.Items>
+                    </Transition>
+                </Menu>
                 {/* Learn */}
                 <Menu as="div" className="text-left">
                     <div>
@@ -159,6 +310,9 @@ const BlockChainNav = () => {
                     <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
                         <Menu.Items className="w-ful focus:outline-none flex justify-between flex-wrap px-5 z-40">
                             <div className="py-1 w-full">
+                            <Menu.Item>
+                                <Link to='/eclaecosystem' className='text-gray-300 block py-2 text-sm font-medium'>Getting Started</Link>
+                            </Menu.Item>
                             <Menu.Item>
                                 <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
                             </Menu.Item>

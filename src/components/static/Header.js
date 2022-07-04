@@ -17,7 +17,7 @@ const Header = () => {
                 <img src="/assets/logos/swapLogo.svg" alt="ECLA LOGO" />
             </Link>
             <ul className="lg:flex hidden items-center gap-3">
-                <Menu as="div" className="text-left">
+                {/* <Menu as="div" className="text-left">
                     <div>
                         <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Developer <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
@@ -106,7 +106,7 @@ const Header = () => {
                             </div>
                         </Menu.Items>
                     </Transition>
-                </Menu>
+                </Menu> */}
                 <Menu as="div" className="text-left">
                     <div>
                         <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Network <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
@@ -164,9 +164,35 @@ const Header = () => {
                         </Menu.Items>
                     </Transition>
                 </Menu>
-                <li>
-                    <Link to='/' className="text-white text-sm tracking-wide font-medium">Ecosystem</Link>
-                </li>
+                <Menu as="div" className="text-left">
+                <div>
+                    <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Ecosystem <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                </div>
+                <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
+                    <Menu.Items className="origin-top-left absolute focus:outline-none flex ecosys_dropdown justify-between py-5 mt-2 flex-wrap px-5 z-40">
+                        <div className="py-1">
+                            <Menu.Item>
+                                <Link to='/eclaecosystem' className='text-gray-300 block py-2 text-sm font-medium'>Getting Started</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='/eclamarket' className='text-gray-300 block py-2 text-sm font-medium'>NFT Marketplace</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='/eclareality' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Reality</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Bridge</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Stake</Link>
+                            </Menu.Item>
+                        </div>
+                    </Menu.Items>
+                </Transition>
+            </Menu>
                 <Menu as="div" className="text-left">
                     <div>
                         <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
@@ -261,7 +287,7 @@ const Header = () => {
         </div>
         {toggle?<div className="w-full h-screen fixed top-0 left-0 z-40 flex lg:hidden">
             <ul className="h-screen w-9/12 py-20 bg-gray-900 bg-opacity-90 flex flex-col gap-9 overflow-y-auto">
-                <Menu as="div" className="text-left">
+                {/* <Menu as="div" className="text-left">
                     <div>
                         <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Developer <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
                     </div>
@@ -350,7 +376,7 @@ const Header = () => {
                             </div>
                         </Menu.Items>
                     </Transition>
-                </Menu>
+                </Menu> */}
                 <Menu as="div" className="text-left">
                     <div>
                         <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Network <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
@@ -408,9 +434,35 @@ const Header = () => {
                         </Menu.Items>
                     </Transition>
                 </Menu>
-                <li>
-                    <Link to='/' className="text-white text-sm tracking-wide font-medium px-4">Ecosystem</Link>
-                </li>
+                <Menu as="div" className="text-left">
+                    <div>
+                        <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Ecosystem <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
+                    </div>
+                    <Transition as={Fragment} enter="transition ease-out duration-100" enterFrom="transform opacity-0 scale-95" enterTo="transform opacity-100 scale-100" leave="transition ease-in duration-75" leaveFrom="transform opacity-100 scale-100" leaveTo="transform opacity-0 scale-95">
+                        <Menu.Items className="w-ful focus:outline-none flex justify-between flex-wrap px-5 z-40">
+                            <div className="py-1 w-full">
+                            <Menu.Item>
+                                <Link to='/eclaecosystem' className='text-gray-300 block py-2 text-sm font-medium'>Getting Started</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='/eclamarket' className='text-gray-300 block py-2 text-sm font-medium'>NFT Marketplace</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='/eclareality' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Reality</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Bridge</Link>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <Link to='' className='text-gray-300 block py-2 text-sm font-medium'>Stake</Link>
+                            </Menu.Item>
+                            </div>
+                        </Menu.Items>
+                    </Transition>
+                </Menu>
                 <Menu as="div" className="text-left">
                     <div>
                         <Menu.Button className="inline-flex justify-start items-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium text-gray-100">Community <span><img src="/assets/icons/downchevron.svg" className=" ml-2" alt="downarrow"/></span></Menu.Button>
@@ -498,7 +550,7 @@ const Header = () => {
                             <option value="matic-network" className="font-semibold">Polygon</option>
                         </select>
                         <strong className="text-gray-300 text-sm ml-5">0 BNB</strong><button onClick={()=>setConnected(false)} className="w-fit auth_btn text-gray-300 font-semibold px-4 py-1.5 rounded flex gap-3 items-center text-sm">0xa50b...de5152<img src="/assets/clipboard.svg" className="rounded-full w-6 h-6" alt="Profile"/></button></div> 
-                        : <button onClick={()=>setConnected(true)} className="ml-5 text-white font-semibold text-sm cursor-pointer auth_btn px-5 py-1.5 rounded flex justify-center items-center"><img src="/assets/icons/eclaWallet.svg" className="w-8 h-8 mr-3" alt="Wallet Icon"/> Connect Wallet</button>
+                        : <button onClick={()=>setConnected(true)} className="ml-5 text-white font-semibold text-sm cursor-pointer auth_btn px-5 py-1.5 rounded flex justify-center items-center"><img src="/assets/icons/eclaWallet.png" className="w-8 h-8 mr-3" alt="Wallet Icon"/> Connect Wallet</button>
                     }
                 </li>
             </ul>
