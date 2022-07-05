@@ -31,7 +31,7 @@ const EclaEcosystem = () => {
               <Link to='' className="text-gray-600 text-sm whitespace-nowrap md:whitespace-normal">Ecla Reality</Link>
               <Link to='' className="text-gray-600 text-sm whitespace-nowrap md:whitespace-normal">Suntwist Agro Investment Linklatform</Link>
               <Link to='' className="text-gray-600 text-sm whitespace-nowrap md:whitespace-normal">Prime Edifice Real Estate</Link>
-              <Link to='' className="text-gray-600 text-sm whitespace-nowrap md:whitespace-normal">Stacking & Lunchpad</Link>
+              <Link to='' className="text-gray-600 text-sm whitespace-nowrap md:whitespace-normal">Staking & Lunchpad</Link>
               <Link to='' className="text-gray-600 text-sm whitespace-nowrap md:whitespace-normal">Green Mail eCommerce</Link>
               <Link to='' className="text-gray-600 text-sm whitespace-nowrap md:whitespace-normal">Token</Link>
             </span>
@@ -99,7 +99,7 @@ const EclaEcosystem = () => {
               <hr className="border-gray-400 mt-10"/>
               <div className="w-full flex items-center justify-between mt-10 md:flex-row flex-col">
                 <span className="md:w-6/12 w-full">
-                    <h1 className="text-xl font-semibold ecosysTitles">ECLA Stacking</h1>
+                    <h1 className="text-xl font-semibold ecosysTitles">ECLA Staking</h1>
                     <p className="text-xs text-gray-700 mt-5">The E-commerce industry is controlled by big players like Amazon, eBay, Shopify. Despite the size of the industry, and the volume of transactions done daily, certain challenges have limited its further growth. One of them is high transactions for goods purchased by consumers.</p>
                     <button className="connect_btn px-8 py-2 mt-7 text-white">Read Whitepaper</button>
                 </span>

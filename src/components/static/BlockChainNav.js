@@ -206,6 +206,9 @@ const BlockChainNav = () => {
                         <Menu.Items className="w-ful focus:outline-none flex justify-between flex-wrap px-5 z-40">
                             <div className="py-1 w-full">
                             <Menu.Item>
+                                <Link to='/eclaecosystem' className='text-gray-300 block py-2 text-sm font-medium'>Getting Started</Link>
+                            </Menu.Item>
+                            <Menu.Item>
                                 <Link to='/swap' className='text-gray-300 block py-2 text-sm font-medium'>ECLA Swap</Link>
                             </Menu.Item>
                             <Menu.Item>

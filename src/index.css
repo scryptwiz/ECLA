@@ -16,9 +16,7 @@ code {
     monospace;
 }
 .active {
-  background: linear-gradient(295.85deg, #0CF1E3 10.34%, #3FACFC 93.54%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #3FACFC;
 }
 .auth_btn { 
   background-color: #2A4790;

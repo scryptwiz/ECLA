@@ -257,7 +257,7 @@ const MarketPlace = () => {
                 <div className="w-full mx-auto flex md:flex-row flex-col justify-between items-center md:pr-6">
                     <div className="flex justify-center md:flex-row flex-col items-center">
                         <img src="/assets/logos/eclaRingLogo.svg" className="h-40" alt="BBE Logo" />
-                        <img src="/assets/eclacommunity.png" className="sm:h-7 lg:h-10 h-8" alt="ECLA Community Logo"/>
+                        <img src="/assets/logos/eclacommunity.svg" className="sm:h-7 lg:h-10 h-8" alt="ECLA Community Logo"/>
                     </div>
                     <button className="lg:py-2.5 lg:px-7 text-sm mt-2 md:mb-0 mb-5 py-2 px-3 border border-white rounded-full text-white font-semibold">Become a member</button>
                 </div>

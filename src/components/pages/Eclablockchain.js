@@ -15,7 +15,7 @@ const Eclablockchain = () => {
                 <p className="text-xs text-gray-300 mt-4">Decentralized blockchain built to enable scalable, <br/> user-friendly apps for the world.</p>
                 <div className="flex">
                     {/* <span className="blur_bg w-20">h</span> */}
-                    <img src="/assets/logos/bigEclaLogo.png" className="h-64 w-fit mx-auto mt-20" alt="Ecla Logo"/>
+                    <img src="/assets/logos/bigEclaLogo.png" className="h-64 mx-auto mt-20" alt="Ecla Logo"/>
                 </div>
                 <h2 className="font-semibold text-white text-2xl mt-10">Blockchain Ecosystem <br/> for Real People</h2>
             </div>
@@ -39,16 +39,16 @@ const Eclablockchain = () => {
                     <p className="explore_gradient underline mt-5">Explore</p>
                 </span>
             </div>
-            <div className="w-full py-20 time_bg">
+            <div className="w-full sm:py-20 py-5 time_bg">
                 <div className="w-4/5 mx-auto sm:flex-row flex-col  flex justity-between items-center">
                     <span className="sm:w-1/2 w-full">
-                        <h1 className="text-3xl xl:text-6xl trade_title font-semibold">Join a new <br/> world of swift <br/> services</h1>
-                        <p className="mt-3 text-gray-300 xl:text-base   text-xs">Lörem ipsum os enunde polyck. Hypolingar <br/> ninera i sur, tidese. Makroder gigasm eung <br/> nynera asejäling, defol. Nelig speskade fast</p>
+                        <h1 className="text-3xl xl:text-6xl trade_title font-semibold">Join a new world of swift services</h1>
+                        <p className="mt-3 text-gray-300 xl:text-base   text-xs">Lörem ipsum os enunde polyck. Hypolingar ninera i sur, tidese. Makroder gigasm eung nynera asejäling, defol. Nelig speskade fast</p>
                         <p className="md:text-2xl xl:text-3xl font-semibold text-white underline mt-5 trade_title">Learn</p>
                     </span>
-                    <span className="sm:w-1/2 w-full flex justify-end relative">
+                    <span className="sm:w-1/2 w-full flex justify-end relative mt-7 sm:mt-0">
                         <img src="/assets/icons/spiral.svg" className="h-76" alt="spiral" />
-                        <Link to='/' className='text-3xl absolute bottom-20 left-24 text-white underline'>Read <br/> Documentation</Link>
+                        <Link to='/' className='md:text-xl xl:text-3xl absolute xl:bottom-20 bottom-10 md:left-24 left-12 text-white underline'>Read <br/> Documentation</Link>
                     </span>
                 </div>
             </div>

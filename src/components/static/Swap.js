@@ -56,14 +56,26 @@ const Swap = () => {
         setExchangeValue(event.target.value)
     }
     const [search, setSearch] = useState('')
+    const qucikPick = (coinId) => {
+        axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`).then(res=>{
+            dispatch({type:"SET_TOP_COIN", payload:{coinInfo:res.data}});
+        })
+    }
   return (
     <div className="lg:w-2/6 md:w-11/12 w-full mx-auto border-2 border-gray-600 rounded-xl flex flex-col justify-between lg:p-5 md:p-7 p-5 md:mt-0 mt-5" id="swap_bg">
         <div>
             <span className="flex justify-between itms-center">
                 <h2 className="text-2xl font-bold text-white">Swap</h2>
                 <span className="flex items-center">
-                    <img src="/assets/icons/settings.svg" className="h-5" alt="Settings"/>
-                    <img src="/assets/icons/reload.svg" className="h-5 ml-3" alt="Refresh"/>
+                    <button onClick={()=>qucikPick('ethereum')}>
+                    <img src="/assets/icons/eth.svg" className="h-7" alt="Polygon Logo"/>
+                    </button>
+                    <button onClick={()=>qucikPick('binancecoin')}>
+                    <img src="/assets/icons/bin.svg" className="h-7 ml-2" alt="Binance LOGO"/>
+                    </button>
+                    <button onClick={()=>qucikPick('matic-network')}>
+                    <img src="/assets/icons/polygon.svg" className="h-5 ml-2" alt="ECLA LOGO"/>
+                    </button>
                 </span>
             </span>
             <hr className="mt-3 border-gray-600"/>

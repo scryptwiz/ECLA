@@ -20,11 +20,6 @@ const Homepage = () => {
   const bottomCoin = useSelector(state=>state.bottomCoin);
   const [connectPage, setConnectPage] = useState('swap')
   const time = useSelector(state=>state.fetchTime.time);
-  const qucikPick = (coinId) => {
-    axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`).then(res=>{
-      dispatch({type:"SET_TOP_COIN", payload:{coinInfo:res.data}});
-    })
-  }
   const current = new Date();
   const date = `${current.toLocaleString('en-us', { month: 'short' })} ${current.getDate()}, ${current.getFullYear()}`;
   const times = current.getHours() + ':' + current.getMinutes();
@@ -50,17 +45,6 @@ const Homepage = () => {
                 <div className="flex flex-col md:flex-row justify-between">
                     <span className="flex justify-between md:flex-row flex-col w-full">
                         <span>
-                            <span className="flex items-center">
-                                <button onClick={()=>qucikPick('ethereum')}>
-                                  <img src="/assets/icons/eth.svg" className="h-7" alt="Polygon Logo"/>
-                                </button>
-                                <button onClick={()=>qucikPick('binancecoin')}>
-                                  <img src="/assets/icons/bin.svg" className="h-7 ml-2" alt="Binance LOGO"/>
-                                </button>
-                                <button onClick={()=>qucikPick('matic-network')}>
-                                  <img src="/assets/icons/polygon.svg" className="h-5 ml-2" alt="ECLA LOGO"/>
-                                </button>
-                            </span>
                             {topCoin.coinInfo&&bottomCoin.coinInfo? (<h1 className="font-semibold text-white text-3xl mt-2">1001.203<sub className="text-gray-400 ml-1 text-xs uppercase">{topCoin.coinInfo.symbol}/{bottomCoin.coinInfo.symbol}</sub> </h1>) : ''}
                             <small id="rate" className="text-xs">+0.333(+0.72%)</small>
                         </span>
